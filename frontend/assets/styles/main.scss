@@ -1,0 +1,57 @@
+@import 'fonts';
+@import 'typo';
+@import 'iframe';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  background: #050A0F;
+  font-family: 'Normalidad', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+p {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+.owl-theme {
+  .owl-dots {
+    margin-top: 22px;
+
+    .owl-dot {
+      span {
+        @include exact-size(24px!important, 24px!important);
+        margin: 0!important;
+        border-radius: 50%!important;
+        background: none!important;
+        border: 3px solid #FFFFFF!important;
+      }
+      &:not(&:last-child) {
+        margin-right: 16px;
+      }
+      &.active span {
+        background: #FFFFFF!important;
+      }
+    }
+  }
+}
+
+.slider-carousel .owl-stage-outer {
+  border-radius: 40px!important;
+}

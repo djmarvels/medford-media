@@ -1,0 +1,29 @@
+@import 'typo';
+
+$lightblue: #14C1DE;
+
+@mixin exact-size($width: -1, $height: -1, $left: -1, $top: -1) {
+  @if $width != -1 {
+    max-width: $width;
+    min-width: $width;
+    width: $width;
+  }
+  @if $height != -1 {
+    min-height: $height;
+    max-height: $height;
+    height: $height;
+  }
+  @if $top != -1 {
+    top: $top;
+  }
+  @if $left != -1 {
+    left: $left;
+  }
+}
+
+@mixin exact-col($size) {
+  max-width: $size;
+  min-width: $size;
+  width: $size;
+  flex-basis: $size;
+}

@@ -1,0 +1,7 @@
+db/
+yarn.lock
+frontend/!.output
+frontend/.nuxt
+frontend/node_modules
+.idea
+.idea/*

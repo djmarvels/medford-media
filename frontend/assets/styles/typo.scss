@@ -1,0 +1,61 @@
+/**
+  Типографика,
+  Цвета,
+  Размеры
+*/
+$textColors: (
+  "white": #ffffff,
+  "lightblue": #14C1DE
+);
+$textSizes: (
+  "menu": (
+    "size": 24px,
+    "line-height": 124%,
+  ),
+  "link": (
+    "size": 24px,
+    "line-height": 124%,
+  ),
+  "headline": (
+    "size": 64px,
+    "line-height": 111.5%,
+  ),
+  "subheadline": (
+    "size": 30px,
+    "line-height": 36px,
+  ),
+  "headbutton": (
+    "size": 64px,
+    "line-height": 70px,
+  ),
+  "title": (
+    "size": 48px,
+    "line-height": 111.5%,
+  ),
+  "titleRow": (
+    "size": 36px,
+    "line-height": 120%,
+  ),
+  "subtitleRow": (
+    "size": 24px,
+    "line-height": 30px,
+  )
+);
+
+@mixin text($color: null, $size: null) {
+  @if ($color) {
+    color: map-get($textColors, $color);
+  }
+  @if ($size) {
+    font-size: map-get(map-get($textSizes, $size), 'size');
+    line-height: map-get(map-get($textSizes, $size), 'line-height');
+  }
+}
+
+
+a {
+  &:hover {
+    text-decoration: none!important;
+    color: map-get($textColors, 'lightblue')!important;
+  }
+}
