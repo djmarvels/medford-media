@@ -15,7 +15,7 @@
         </ul>
         <div class="header__action">
           <a href="tel:74951390993" class="header__action__number">+7 495 139-09-93</a>
-          <div class="header__action__link">Обратный звонок</div>
+          <div class="header__action__link" @click="setCallbackPopup(true)">Обратный звонок</div>
         </div>
       </div>
     </div>
@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+
 export default {
   data: () => ({
     navigationRoutes: [
@@ -31,6 +33,11 @@ export default {
       { to: '/', label: 'Контакты' }
     ],
   }),
+  methods: {
+    ...mapMutations({
+      setCallbackPopup: 'page/SET_CALLBACK_POPUP',
+    })
+  },
 }
 </script>
 

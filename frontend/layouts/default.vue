@@ -2,15 +2,30 @@
   <div class="page">
     <the-header />
     <nuxt ref="page" />
+    <client-only>
+      <the-order />
+      <the-call-back />
+    </client-only>
   </div>
 </template>
 
 <script>
 import TheHeader from '../components/TheHeader.vue';
+import TheOrder from '../components/TheOrder.vue';
+import TheCallBack from '../components/TheCallBack.vue';
+import { mapGetters } from 'vuex';
 
 export default {
+  name: 'default',
   components: {
-    TheHeader
+    TheHeader,
+    TheOrder,
+    TheCallBack,
+  },
+  computed: {
+    ...mapGetters({
+      orderPopup: 'page/orderPopup',
+    })
   },
 }
 </script>

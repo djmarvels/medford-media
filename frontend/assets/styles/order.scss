@@ -1,0 +1,206 @@
+@import './mixins';
+@import './typo';
+
+.vue-portal-target {
+  --background-popup: #050A0F;
+  --transition-time: 0.6s;
+  --transition-timing: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.order {
+  &.v-easy-dialog--backdrop {
+    background-color: var(--background-popup)!important;
+  }
+
+  .v-easy-dialog--backdrop-btn {
+    display: none!important;
+  }
+
+  .v-easy-dialog--content-container {
+    position: relative!important;
+
+    .order {
+
+      &__video {
+        position: absolute;
+        top: 0;
+        width: 90%;
+        height: 100%;
+        z-index: -1;
+        left: 10%;
+        min-height: 800px;
+      }
+
+      &__success {
+        color: #FFFFFF;
+        width: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+
+        &__title {
+          font-weight: 400;
+          font-size: 64px;
+          line-height: 111.5%;
+          max-width: 638px;
+          margin-bottom: 49px;
+        }
+        &__text {
+          font-weight: 350;
+          font-size: 36px;
+          line-height: 42px;
+          max-width: 523px;
+        }
+        &__submit {
+          margin-top: 62px;
+        }
+      }
+
+      &-inner {
+        max-width: 100%;
+        position: relative;
+        min-height: 680px;
+      }
+
+      &__container {
+        max-width: 1000px;
+        padding: 139px 0 28px;
+        margin: 0 auto 0 132px;
+      }
+
+      &-close {
+        position: absolute;
+        top: 30px;
+        left: auto;
+        right: 39px;
+        @include exact-size(50px, 50px);
+        background: none!important;
+        transition: all var(--transition-time) 0s var(--transition-timing);
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+      &-title {
+        @include text('white', 'headbutton');
+      }
+      &-form {
+        padding: 60px 0;
+
+        &__group {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+
+          &:not(&:last-child) {
+            margin-bottom: 40px;
+          }
+
+          &__input {
+            border: 0;
+            background: none;
+            font-weight: 350;
+            font-size: 36px;
+            line-height: 30px;
+            height: 30px;
+            color: rgba(255,255,255,0.4);
+            padding: 0;
+            outline: none!important;
+            display: block;
+            width: 100%;
+          }
+          &::after {
+            content: '';
+            display: block;
+            border: 2px solid rgba(255,255,255,0.4);
+            width: 100%;
+          }
+        }
+
+        &__submit {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 10px 40px 14px;
+          border-radius: 20px;
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 70px;
+          color: #FFFFFF;
+          background: #14C1DE;
+
+          &_disable {
+            background: rgba(255, 255, 255, 0.3);
+            opacity: 0.4;
+            pointer-events: none;
+            user-select: none;
+          }
+        }
+      }
+      &-slugs {
+        margin-top: 30px;
+
+        &__title {
+          @include text('white', 'link');
+        }
+        &__list {
+          list-style-type: none;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 0;
+          gap: 20px;
+          margin: 14px 0 0;
+          overflow: hidden;
+
+          &__item {
+            button {
+              background: none!important;
+              flex-direction: row;
+              padding: 8px 18px;
+              gap: 10px;
+              border: 2px solid rgba(255,255,255,0.4);
+              border-radius: 12px;
+              font-weight: 350;
+              font-size: 24px;
+              line-height: 32px;
+              display: flex;
+              align-items: center;
+              text-align: center;
+              color: rgba(255,255,255,0.4);
+              transition: all var(--transition-time) 0s var(--transition-timing);
+            }
+            &_active > button, button:hover {
+              border: 2px solid rgba(255,255,255,1);
+              color: rgba(255,255,255,1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.v-easy-dialog--transition-ease-in {
+  transform: inherit!important;
+  opacity: 1!important;
+  transition: all var(--transition-time) 0s var(--transition-timing)!important;
+}
+
+.v-easy-dialog--transition-ease-out {
+  transform: inherit!important;
+  opacity: 1!important;
+  transition: all var(--transition-time) 0s var(--transition-timing)!important;
+}
+
+.v-easy-dialog--content-transition-opened {
+  opacity: 1!important;
+  transform: inherit!important;
+}
+
+.v-easy-dialog--content-transition-closed {
+  opacity: 0!important;
+  transform: inherit!important;
+}

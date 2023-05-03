@@ -1,7 +1,6 @@
 <template>
   <div class="main">
     <iframe id="mainVideo" ref="mainVideo" class="main-video" src="https://player.vimeo.com/video/820383465?autoplay=0&loop=1&autopause=0&muted=0&controls=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
     <div class="container">
       <div class="row">
         <div class="main-info">
@@ -12,7 +11,7 @@
             Профессиональный видеопродакшн с&nbsp;20-и летним стажем медиционского
             видеомаркетинга
           </h3>
-          <button type="button" class="main-action-button">Заказать услуги</button>
+          <button type="button" class="main-action-button" @click="setOrderPopup(true)">Заказать услуги</button>
         </div>
       </div>
     </div>
@@ -29,6 +28,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
 import 'intersection-observer';
 
 import TheShowreel from '../components/TheShowreel.vue';
@@ -78,6 +78,9 @@ export default {
     }
   },
   methods: {
+    ...mapMutations({
+      setOrderPopup: 'page/SET_ORDER_POPUP',
+    }),
     onElementObserved(entries) {
       entries.forEach(async ({ target, isIntersecting }) => {
         if (target && target.id) {

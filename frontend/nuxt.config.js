@@ -18,10 +18,12 @@ module.exports = {
     cssSourceMap: false,
     extractCSS: false,
     transpile: [
-      'vue-owl-carousel'
+      'vue-owl-carousel',
+      'v-easy-dialog'
     ],
     vendor: [
-        'vue-owl-carousel'
+        'vue-owl-carousel',
+        'v-easy-dialog'
     ]
   }
 };
