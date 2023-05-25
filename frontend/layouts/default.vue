@@ -4,7 +4,7 @@
     <nuxt ref="page" />
     <client-only>
       <the-order />
-      <the-call-back />
+      <the-call-back v-if="callbackPopup" />
     </client-only>
   </div>
 </template>
@@ -25,6 +25,7 @@ export default {
   computed: {
     ...mapGetters({
       orderPopup: 'page/orderPopup',
+      callbackPopup: 'page/callbackPopup',
     })
   },
 }
