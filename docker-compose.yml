@@ -21,24 +21,29 @@ services:
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_PASSWORD: password
   ## Nuxt
   frontend:
-    build: ./frontend
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
     ports:
-      - "8000:8000"
-    entrypoint: [ "node", ".output/server/index.mjs" ]
+      - "3000:3000"
+    #entrypoint: [ "node", ".output/server/index.mjs" ]
     volumes:
-      #- frontend_dir:/frontend/app/
-      - ./frontend/logs:/root/.npm/_logs
-      - ./frontend/composables:/app/composables
-      - ./frontend/layouts:/app/layouts
-      - ./frontend/pages:/app/pages
-      - ./frontend/public:/app/public
-      - ./frontend/types:/app/types
-      - ./frontend/app.vue:/app/app.vue
-      - ./frontend/nuxt.config.ts:/app/nuxt.config.ts
-      - ./frontend/unocss.config.ts:/app/unocss.config.ts
+      - ./frontend:/app/frontend
+      #- ./frontend:/app/frontend
+      #- ./frontend/!node_modules:/app/frontend
+      #- ./frontend/!.nuxt:/app/frontend
+      #- ./frontend/!.output:/app/frontend
+      # - ./frontend/composables:/app/composables
+      # - ./frontend/layouts:/app/layouts
+      # - ./frontend/pages:/app/pages
+      # - ./frontend/public:/app/public
+      # - ./frontend/types:/app/types
+      # - ./frontend/app.vue:/app/app.vue
+      # - ./frontend/nuxt.config.ts:/app/nuxt.config.ts
+      # - ./frontend/unocss.config.ts:/app/unocss.config.ts
     depends_on:
       - wordpress
   ## NGINX

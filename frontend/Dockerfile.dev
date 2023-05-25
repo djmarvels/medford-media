@@ -11,7 +11,7 @@ WORKDIR /app/
 COPY frontend/package*.json ./
 
 # Install dependencies
-#RUN npm install
+RUN npm install
 
 # build app for production with minification
 WORKDIR /app/frontend

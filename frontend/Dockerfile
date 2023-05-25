@@ -5,17 +5,20 @@ FROM node:16-alpine
 WORKDIR /app
 
 # Copy package.json and package-lock.json files to the container
-COPY package*.json ./
+COPY frontend/package*.json ./
 
 # Install dependencies
-RUN yarn
+RUN npm install
 
 # Copy the rest of the application files to the container
 COPY . .
 
 # Build the application for production
-RUN yarn build
+RUN npm run generate
 
 
 # Expose port 3000 to the Docker host
-EXPOSE 8000
+EXPOSE 3000
+
+# Start frontend
+CMD ["npm", "run", "start", "--inspect node_modules/.bin/nuxt"]
