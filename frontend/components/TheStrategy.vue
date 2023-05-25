@@ -81,6 +81,15 @@ export default {
       line-height: 48px;
       color: #FFFFFF;
     }
+    @media (max-width: 575px) {
+      max-width: calc(100% - (35px * 2));
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: 374px) {
+      font-size: 32px;
+      line-height: 120%;
+    }
   }
   &-items {
     display: flex;
@@ -94,6 +103,11 @@ export default {
     @media (max-width: 1199px) {
       margin-top: 71px;
       flex-direction: column;
+    }
+    @media (max-width: 575px) {
+      max-width: calc(100% - (35px * 2));
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   &-item {
@@ -182,10 +196,20 @@ export default {
         letter-spacing: 0.02em;
         margin: 20px 0 0;
         padding-left: 40px;
+      }
 
+      @media (max-width: 1199px) and (min-width: 576px) {
         br {
           display: none;
         }
+      }
+
+      @media (max-width: 575px) {
+        font-size: 18px;
+        line-height: 120%;
+        margin-top: 12px;
+        word-break: inherit;
+        white-space: inherit;
       }
     }
     &--important {

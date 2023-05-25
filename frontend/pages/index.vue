@@ -1,9 +1,11 @@
 <template>
   <div class="main">
-    <iframe id="mainVideo" ref="mainVideo" :class="[
-        'main-video',
-        { 'main-video_open_mobile': mobileMenu }
-    ]" src="https://player.vimeo.com/video/820383465?autoplay=0&loop=1&autopause=0&muted=0&controls=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <div :class="[
+        'main-video__overlay',
+        { 'main-video__overlay_open_mobile': mobileMenu }
+    ]">
+      <iframe id="mainVideo" ref="mainVideo" class="main-video" src="https://player.vimeo.com/video/820383465?autoplay=0&loop=1&autopause=0&muted=0&controls=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
     <div class="container">
       <div class="row">
         <div class="main-info">
@@ -159,6 +161,14 @@ export default {
       line-height: 56px;
       margin: 0 auto;
     }
+    @media (max-width: 575px) {
+      max-width: calc(100% - (42px * 2));
+      font-size: 35px;
+      line-height: 120%;//
+    }
+    @media (max-width: 374px) {
+      font-size: 32px;
+    }
   }
   &-subheadline {
     font-weight: 350;
@@ -173,6 +183,10 @@ export default {
       font-size: 24px;
       line-height: 30px;
       color: #F5F5F5;
+    }
+    @media (max-width: 374px) {
+      font-size: 20px;
+      line-height: 120%;
     }
   }
   &-action-button {
@@ -196,6 +210,17 @@ export default {
       color: #FFFFFF;
       width: 100%;
       display: block;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 28px;
+      white-space: nowrap;
+      max-width: max-content;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 24px;
+      padding: 14px 34px 14px;
     }
   }
 }

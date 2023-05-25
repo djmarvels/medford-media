@@ -27,7 +27,6 @@ services:
     build:
       context: .
       dockerfile: ./frontend/Dockerfile.dev
-    entrypoint: [ "node", ".output/server/index.mjs" ]
     ports:
       - "3030:3030"
       - "24678:24678"

@@ -128,12 +128,31 @@ iframe {
 }
 
 .main-video {
-  position: absolute;
-  top: 0;
-  left: auto;
-  right: 0;
-  z-index: -1;
-  transition: all 0.2s 0s ease-in-out;
+  @media (max-width: 575px) {
+    @include exact-size(1657px, 932px);
+    left: -890px;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s 0s ease-in-out;
+
+    @media (max-width: 575px) {
+      overflow: hidden;
+      max-width: 100%;
+      min-height: 932px;
+    }
+
+    &_open_mobile {
+
+    }
+  }
 
   &, iframe, img {
     width: 100%;
@@ -146,7 +165,7 @@ iframe {
     }
   }
 
-  &_open_mobile, iframe, img {
+  iframe, img {
     min-width: 100vw;
     max-width: 100vw;
     @media (min-width: 992px) {

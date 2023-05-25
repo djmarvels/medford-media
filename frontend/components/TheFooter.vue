@@ -61,6 +61,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/styles/mixins';
+
 .footer {
   @media (min-width: 992px) {
     padding: 600px 0 102px;
@@ -88,6 +90,20 @@ export default {
       gap: 0 40px;
       margin: 261px auto 0;
     }
+    @media (max-width: 575px) {
+      gap: 0 32px;
+
+      &__link {
+        display: block;
+      }
+      &__image {
+        @include exact-size(40px, 40px);
+      }
+    }
+
+    @media (max-width: 374px) {
+      gap: 0 24px;
+    }
   }
 
   &__menu {
@@ -108,6 +124,10 @@ export default {
       gap: 40px 0;
       font-size: 30px;
       line-height: 36px;
+    }
+    @media (max-width: 374px) {
+      font-size: 24px;
+      line-height: 120%;
     }
 
     a {

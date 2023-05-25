@@ -115,6 +115,15 @@ export default {
   justify-content: flex-start;
   padding-top: 39px;
 
+  @media (max-width: 575px) {
+    padding-left: 42px;
+    padding-right: 24px;
+    padding-top: 25px;
+  }
+  @media (max-width: 374px) {
+    padding-left: 24px;
+  }
+
   &_open {
     @media (max-width: 991px) {
       min-height: 100vh;
@@ -123,6 +132,16 @@ export default {
       overflow: hidden;
       overflow-y: auto;
       padding: 39px 24px 44px 42px;
+
+      @media (max-width: 575px) {
+        padding-top: 25px;
+        padding-left: 42px;
+        padding-right: 24px
+      }
+
+      @media (max-width: 374px) {
+        padding-left: 24px;
+      }
 
       &::-webkit-scrollbar {
         width: 0;  /* Remove scrollbar space */
@@ -149,10 +168,24 @@ export default {
 
   &__brand {
     display: block;
-    margin-right: 62px;
+    @media (min-width: 576px) {
+      margin-right: 62px;
+    }
+    @media (max-width: 575px) {
+      margin-right: auto;
+    }
+    @media (max-width: 374px) {
+      max-width: 180px;
+    }
 
     &__logo {
-      @include exact-size(231px, 62.63px);
+      @media (min-width: 375px) {
+        @include exact-size(231px, 62.63px);
+      }
+      @media (max-width: 374px) {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -189,6 +222,13 @@ export default {
         line-height: 124%;
         color: #FFFFFF;
       }
+
+      @media (max-width: 575px) {
+        font-size: 38px;
+      }
+      @media (max-width: 374px) {
+        font-size: 32px;
+      }
     }
 
     @media (max-width: 991px) {
@@ -196,14 +236,22 @@ export default {
         display: none;
       }
       &_open {
-        margin: 100px 0 300px;
-        min-height: 300px;
+
         flex-basis: 100%;
         width: 100%;
         flex-direction: column;
         padding: 0;
-        gap: 60px;
+        gap: 50px;
         align-items: center;
+        margin: 100px 0;
+
+        @media (min-width: 375px) {
+          min-height: 300px;
+        }
+
+        @media (max-width: 374px) {
+          gap: 40px;
+        }
       }
     }
   }
@@ -231,6 +279,13 @@ export default {
       @media (min-width: 992px) {
         display: none;
       }
+      @media (max-width: 374px) {
+        max-width: 24px;
+        svg {
+          max-width: 100%;
+          height: auto;
+        }
+      }
     }
   }
 
@@ -255,6 +310,22 @@ export default {
 
       &:not(&_open) {
         display: none;
+      }
+    }
+
+    @media (max-width: 575px) {
+      gap: 0 24px;
+
+      &__image {
+        @include exact-size(40px, 40px);
+      }
+    }
+
+    @media (max-width: 374px) {
+      gap: 0 24px;
+
+      &__image {
+        @include exact-size(30px, 30px);
       }
     }
   }

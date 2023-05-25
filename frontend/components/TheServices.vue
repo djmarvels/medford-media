@@ -159,6 +159,17 @@ export default {
       text-align: center;
       color: #FFFFFF;
     }
+
+    @media (max-width: 575px) {
+      white-space: nowrap;
+      max-width: max-content;
+      font-size: 28px;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 24px;
+      padding: 14px 34px 14px;
+    }
   }
 }
 

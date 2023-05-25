@@ -114,22 +114,37 @@ export default {
       @media (max-width: 991px) and (min-width: 768px) {
         padding-left: calc(((100vw - 540px) / 2) - 30px);
       }
+      @media (max-width: 767px) and (min-width: 576px) {
+        padding-left: calc(((100vw - 520px) / 2) - 15px);
+      }
     }
   }
   &-item {
-    @include exact-size(320px, 180px);
     border-radius: 12px;
     position: relative;
     overflow: hidden;
     display: block;
+
+    @media (min-width: 375px) {
+      @include exact-size(320px, 180px);
+    }
+    @media (max-width: 374px) {
+      @include exact-size(280px, 180px);
+    }
   }
   &-image {
     position: absolute;
     width: 100%;
     height: 100%;
     display: block;
-    transform: scale(1.01);
-    object-fit: cover;
+
+    @media (min-width: 375px) {
+      transform: scale(1.01);
+      object-fit: cover;
+    }
+    @media (max-width: 374px) {
+      object-fit: contain;
+    }
   }
 }
 </style>

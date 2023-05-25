@@ -34,16 +34,27 @@ export default {
 @import '../assets/styles/mixins';
 
 .slider {
+
+  .col.col-12 {
+    @media (max-width: 575px) {
+      padding: 0;
+    }
+  }
+
   &-item {
     overflow: hidden;
-    border-radius: 40px;
+    @media (min-width: 768px) {
+      border-radius: 40px;
+    }
 
     &-box {
       width: 100%;
     }
   }
   &-image {
-    border-radius: 40px;
+    @media (min-width: 768px) {
+      border-radius: 40px;
+    }
     display: block;
     object-fit: cover;
   }
@@ -93,6 +104,12 @@ export default {
       display: block;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @media (max-width: 575px) {
+      white-space: nowrap;
+      max-width: max-content;
+      font-size: 28px;
     }
   }
 }

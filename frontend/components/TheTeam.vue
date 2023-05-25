@@ -8,21 +8,6 @@
           </h3>
         </div>
         <div class="col col-12">
-          <div class="team-persons-carousel">
-            <client-only>
-              <owl-carousel :nav="false" :dots="false" :autoWidth="true" :margin="27">
-                <div v-for="person in team" :key="person.id" class="team-person">
-                  <div class="team-person-image">
-                    <img :src="person.image" :alt="person.name">
-                  </div>
-                  <div class="team-person-text">
-                    <h6 class="team-person-name" v-html="person.name" />
-                    <p class="team-person-job" v-html="person.job" />
-                  </div>
-                </div>
-              </owl-carousel>
-            </client-only>
-          </div>
           <div class="team-persons">
             <div v-for="person in team" :key="person.id" class="team-person">
               <div class="team-person-image">
@@ -34,6 +19,23 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="team-persons-carousel">
+          <client-only>
+            <owl-carousel :nav="false" :dots="false" :autoWidth="true" :margin="27">
+              <div v-for="person in team" :key="person.id" class="team-person">
+                <div class="team-person-image">
+                  <img :src="person.image" :alt="person.name">
+                </div>
+                <div class="team-person-text">
+                  <h6 class="team-person-name" v-html="person.name" />
+                  <p class="team-person-job" v-html="person.job" />
+                </div>
+              </div>
+            </owl-carousel>
+          </client-only>
         </div>
       </div>
     </div>
@@ -102,6 +104,11 @@ export default {
       }
       @media (max-width: 991px) {
         margin-top: 23px;
+        max-width: 100%;
+      }
+      @media (max-width: 575px) {
+        margin-left: 15px;
+        max-width: calc(100% - 15px);
       }
     }
   }
@@ -147,6 +154,7 @@ export default {
         @media (min-width: 992px) {
           max-width: 100%;
           height: auto;
+          border-radius: 20px;
         }
         @media (max-width: 991px) {
           @include exact-size(250px, 385px);
