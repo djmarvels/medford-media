@@ -16,7 +16,7 @@ RUN npm install
 WORKDIR /app/frontend
 
 # Expose port 3000 to the Docker host
-EXPOSE 8000
+EXPOSE 3030
 
 # see frontend/package.json:: "scripts": "dev" block
 CMD ["npm", "run", "dev"]
