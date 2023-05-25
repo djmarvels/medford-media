@@ -1,5 +1,4 @@
 module.exports = {
-  target: 'static',
   server: {
     port: 3000, // default: 3000
     host: '0.0.0.0', // default: localhost,
@@ -28,7 +27,7 @@ module.exports = {
     { src: './plugins/owl-carousel', ssr: false },
   ],
   build: {
-    publicPath: '/_nuxt/',
+    // publicPath: '/_nuxt/',
     cssSourceMap: false,
     extractCSS: false,
     transpile: [

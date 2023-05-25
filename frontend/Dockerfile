@@ -8,17 +8,20 @@ WORKDIR /app
 COPY frontend/package*.json ./
 
 # Install dependencies
-RUN npm install
 
 # Copy the rest of the application files to the container
-COPY . .
+WORKDIR /app/frontend/
 
 # Build the application for production
-RUN npm run generate
+RUN npm install
+RUN npm run build
 
 
 # Expose port 3000 to the Docker host
 EXPOSE 3000
 
+ENV NUXT_HOST=0.0.0.0
+ENV NUXT_PORT=3000
+
 # Start frontend
-CMD ["npm", "run", "start", "--inspect node_modules/.bin/nuxt"]
+CMD ["npm", "run", "start"]

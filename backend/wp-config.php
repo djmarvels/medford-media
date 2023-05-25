@@ -1,4 +1,20 @@
 <?php
+// a helper function to lookup "env_FILE", "env", then fallback
+if (!function_exists('getenv_docker')) {
+	// https://github.com/docker-library/wordpress/issues/588 (WP-CLI will load this file 2x)
+	function getenv_docker($env, $default) {
+		if ($fileEnv = getenv($env . '_FILE')) {
+			return rtrim(file_get_contents($fileEnv), "\r\n");
+		}
+		else if (($val = getenv($env)) !== false) {
+			return $val;
+		}
+		else {
+			return $default;
+		}
+	}
+}
+
 /**
  * The base configuration for WordPress
  *
@@ -19,26 +35,11 @@
  *
  * @package WordPress
  */
-define( 'WP_HOME', 'http://localhost/backend' );
-define( 'WP_SITEURL', 'http://localhost/backend' );
+define( 'WP_HOME', getenv_docker('WORDPRESS_HOST', 'http://localhost').'/backend' );
+define( 'WP_SITEURL', getenv_docker('WORDPRESS_HOST', 'http://localhost').'/backend' );
 // IMPORTANT: this file needs to stay in-sync with https://github.com/WordPress/WordPress/blob/master/wp-config-sample.php
 // (it gets parsed by the upstream wizard in https://github.com/WordPress/WordPress/blob/f27cb65e1ef25d11b535695a660e7282b98eb742/wp-admin/setup-config.php#L356-L392)
 
-// a helper function to lookup "env_FILE", "env", then fallback
-if (!function_exists('getenv_docker')) {
-	// https://github.com/docker-library/wordpress/issues/588 (WP-CLI will load this file 2x)
-	function getenv_docker($env, $default) {
-		if ($fileEnv = getenv($env . '_FILE')) {
-			return rtrim(file_get_contents($fileEnv), "\r\n");
-		}
-		else if (($val = getenv($env)) !== false) {
-			return $val;
-		}
-		else {
-			return $default;
-		}
-	}
-}
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
