@@ -3,7 +3,8 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt --hostname 0.0.0.0",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
