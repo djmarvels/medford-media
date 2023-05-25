@@ -95,28 +95,70 @@ export default {
 @import '../assets/styles/mixins';
 
 .services {
-  margin-top: 125px;
+  @media (min-width: 992px) {
+    margin-top: 125px;
+  }
+  @media (max-width: 991px) {
+    margin-top: 80px;
+  }
 
   &-title {
-    @include text('white', 'headbutton');
+    @media (min-width: 992px) {
+      @include text('white', 'headbutton');
+    }
+    @media (max-width: 991px) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 111.5%;
+      color: #FFFFFF;
+    }
   }
   &-subtitle {
-    margin-top: 35px;
     font-weight: 350;
-    @include text('white', 'subheadline');
+
+    @media (min-width: 992px) {
+      margin-top: 35px;
+      @include text('white', 'subheadline');
+    }
+    @media (max-width: 991px) {
+      margin-top: 32px;
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+    }
   }
 
   &-rows {
-    margin-top: 93px;
+    @media (min-width: 992px) {
+      margin-top: 93px;
+    }
+    @media (max-width: 991px) {
+      margin-top: 80px;
+    }
   }
 
   &-button {
-    margin-top: 100px;
-
     background-color: $lightblue;
-    border-radius: 20px;
-    padding: 24px 60px 30px;
-    @include text('white', 'headbutton');
+
+    @media (min-width: 992px) {
+      margin-top: 100px;
+      @include text('white', 'headbutton');
+      border-radius: 20px;
+      padding: 24px 60px 30px;
+    }
+
+    @media (max-width: 991px) {
+      margin-top: 59px;
+      padding: 19px 38px 22px;
+      border-radius: 18px;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      color: #FFFFFF;
+    }
   }
 }
 

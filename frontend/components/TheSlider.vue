@@ -49,6 +49,12 @@ export default {
   }
   &-carousel {
     width: 100%;
+
+    @media (max-width: 991px) {
+      .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 19px;
+      }
+    }
   }
   &-text {
     @include text('white', 'subtitleRow');
@@ -58,6 +64,14 @@ export default {
     b {
       font-weight: 500;
     }
+
+    @media (max-width: 991px) {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      max-width: 320px;
+      margin: 23px auto 0;
+    }
   }
   &-button {
     background-color: $lightblue;
@@ -66,6 +80,20 @@ export default {
     @include text('white', 'headbutton');
     margin: 101px auto 0;
     display: block;
+
+    @media (max-width: 991px) {
+      border-radius: 18px;
+      margin-top: 77px;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      color: #FFFFFF;
+      font-weight: 400;
+      padding: 19px 38px 22px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 </style>

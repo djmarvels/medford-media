@@ -62,19 +62,6 @@
 import { mapGetters, mapMutations } from 'vuex';
 import moment from 'moment';
 import ru from 'moment/dist/locale/ru';
-moment.locale('ru', {
-  relativeTime : {
-    future: 'Через %s',
-    past: '%s',
-    s: 'Сейчас',
-    m: 'минуту',
-    mm: '%d минут',
-    h: 'час',
-    hh: '%d часа',
-    d: 'день',
-    dd: '%d дней',
-  },
-});
 
 export default {
   name: 'TheCallBack',
@@ -103,6 +90,21 @@ export default {
     ...mapGetters({
       callbackPopup: 'page/callbackPopup',
     }),
+  },
+  created() {
+    moment.locale('ru', {
+      relativeTime : {
+        future: 'Через %s',
+        past: '%s',
+        s: 'Сейчас',
+        m: 'минуту',
+        mm: '%d минут',
+        h: 'час',
+        hh: '%d часа',
+        d: 'день',
+        dd: '%d дней',
+      },
+    });
   },
   methods: {
     ...mapMutations({

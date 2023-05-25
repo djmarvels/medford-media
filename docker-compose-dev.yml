@@ -29,7 +29,7 @@ services:
       dockerfile: ./frontend/Dockerfile.dev
 #    entrypoint: [ 'yarn', 'dev' ]
     ports:
-      - "3000:3000"
+      - "8000:8000"
       - "24678:24678"
     volumes:
       - ./frontend:/app/frontend

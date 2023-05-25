@@ -9,13 +9,17 @@
           <div class="strategy-item strategy-item--important">
             <div class="strategy-item-action">
               Важно
+              <img src="../assets/images/strategy_arrow_down_mobile.svg" class="strategy-item-action-arrow strategy-item-action-arrow--mobile strategy-item-action-arrow--mobile-up">
               <img src="../assets/images/strategy-arrow-right.svg" class="strategy-item-action-arrow strategy-item-action-arrow--right" />
             </div>
             <div class="strategy-item-title">Заявляйте о&nbsp;вашем бренде</div>
             <p class="strategy-item-text">Вирусные и&nbsp;хитовые<br>видеоролики<br>связанные с&nbsp;запуском продукта или крупным анонсом нужно<br>выпускать хотябы раз в&nbsp;пол года</p>
           </div>
           <div class="strategy-item strategy-item--constantly">
-            <div class="strategy-item-action">Постоянно</div>
+            <div class="strategy-item-action">
+              Постоянно
+              <img src="../assets/images/strategy_arrow_down_mobile.svg" class="strategy-item-action-arrow strategy-item-action-arrow--mobile strategy-item-action-arrow--mobile-down">
+            </div>
             <div class="strategy-item-title">Вовлекайте в&nbsp;сообщество</div>
             <p class="strategy-item-text">Регулярно публикуйте основной контент<br>в&nbsp;легковоспроизводимом формате. Именно этим занимаются все известные<br>видеоблогеры</p>
           </div>
@@ -43,29 +47,54 @@ export default {
 @import '../assets/styles/mixins';
 
 .strategy {
-  padding: 121px 0 49px;
-  margin-top: 200px;
-  background-image: url('../assets/images/strategy-background.png');
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+
   @media (min-width: 1700px) {
     background-size: contain;
   }
-  @media (max-width: 1649px) {
+  @media (max-width: 1649px) and (min-width: 1200px) {
     background-size: 100%;
+  }
+  @media (min-width: 1200px) {
+    background-image: url('../assets/images/strategy-background.png');
+    background-position: 100% 50%;
+    margin-top: 200px;
+    padding: 121px 0 49px;
+  }
+  @media (max-width: 1199px) {
+    background-image: url('../assets/images/strategy-background-mobile.png');
+    background-size: 100% 100%;
+    background-position: 50% calc(47px + 144px);
+    padding: 0 0 49px;
+    margin-top: 177px;
   }
 
 
   &-title {
-    @include text('white', 'headbutton');
     margin-bottom: 0;
+    @media (min-width: 992px) {
+      @include text('white', 'headbutton');
+    }
+    @media (max-width: 991px) {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 48px;
+      color: #FFFFFF;
+    }
   }
   &-items {
-    margin-top: 153px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
+    @media (min-width: 1200px) {
+      margin-top: 153px;
+      flex-direction: row;
+    }
+    @media (max-width: 1199px) {
+      margin-top: 71px;
+      flex-direction: column;
+    }
   }
   &-item {
     width: 100%;
@@ -74,43 +103,115 @@ export default {
       position: relative;
       max-width: max-content;
 
+      @media (max-width: 1199px) {
+        font-size: 36px;
+        line-height: 120%;
+        font-weight: 400;
+        margin-bottom: 14px;
+      }
+
       &-arrow {
         position: absolute;
-        top: calc(50% - (31px / 2.2));
 
-        &--right {
-          left: calc(100% + 39px);
-          right: auto;
+        @media (min-width: 1200px) {
+          top: calc(50% - (31px / 2.2));
+
+          &--right {
+            left: calc(100% + 39px);
+            right: auto;
+          }
+          &--left {
+            right: calc(100% + 39px);
+            left: auto;
+          }
         }
-        &--left {
-          right: calc(100% + 39px);
-          left: auto;
+        &:not(&--mobile) {
+          @media (max-width: 1199px) {
+            display: none;
+          }
+        }
+        &--mobile {
+          @media (min-width: 1200px) {
+            display: none;
+          }
+          @media (max-width: 1199px) {
+            @include exact-size(229px, 30px);
+            transform-origin: left top;
+
+            &-up {
+              left: 30px;
+              top: calc(100% + 14px);
+              transform: rotate(90deg);
+            }
+            &-down {
+              left: 0;
+              transform: rotate(-90deg);
+              top: calc(100% + 229px + 20px);
+            }
+          }
         }
       }
     }
     &-title {
-      margin: 30px 0 0;
-      min-height: 60px;
       @include text('white', 'subtitleRow');
+
+      @media (min-width: 1200px) {
+        margin: 30px 0 0;
+        min-height: 60px;
+      }
+      @media (max-width: 1199px) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        padding-left: 40px;
+      }
     }
     &-text {
-      margin: 40px 0 0;
       @include text('white', 'subtitleRow');
       letter-spacing: 0.02em;
       word-break: break-all;
       word-wrap: normal;
       font-weight: 350;
+
+      @media (min-width: 1200px) {
+        margin: 40px 0 0;
+      }
+      @media (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        margin: 20px 0 0;
+        padding-left: 40px;
+
+        br {
+          display: none;
+        }
+      }
     }
     &--important {
-      @include exact-col(300px);
+      @media (min-width: 1200px) {
+        @include exact-col(300px);
+      }
     }
     &--constantly {
-      @include exact-col(295px);
-      margin-left: 70px;
+      @media (min-width: 1200px) {
+        @include exact-col(295px);
+        margin-left: 70px;
+      }
     }
     &--useful {
-      @include exact-col(335px);
-      margin-left: auto;
+      @media (min-width: 1200px) {
+        @include exact-col(335px);
+        margin-left: auto;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      &--important > &-text, &--constantly > &-text {
+        min-height: 200px;
+        padding-right: 35px;
+        word-break: break-word;
+      }
     }
   }
 }

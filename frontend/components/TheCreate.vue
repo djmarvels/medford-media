@@ -83,14 +83,28 @@ export default {
 $sizeXl: 1140px;
 
 .create {
-  padding-top: 224px;
   overflow: hidden;
+  @media (min-width: 1200px) {
+    padding-top: 224px;
+  }
+  @media (max-width: 1199px) {
+    padding-top: 86px;
+  }
 
   &-title {
     width: 100%;
-    max-width: 750px;
-    margin-left: calc((100vw - $sizeXl) / 2);
     @include text('white', 'headbutton');
+    @media (min-width: 1200px) {
+      margin-left: calc((100vw - $sizeXl) / 2);
+      max-width: 750px;
+    }
+    @media (max-width: 1199px) and (min-width: 992px) {
+      padding: 0 35px 0 42px;
+    }
+    @media (max-width: 991px) {
+      max-width: 560px;
+      margin: 0 auto;
+    }
   }
 
   &-item {
@@ -98,7 +112,12 @@ $sizeXl: 1140px;
     position: relative;
 
     &--mixcast, &--concept {
-      margin-left: calc((100vw - $sizeXl) / 2);
+      @media (min-width: 1200px) {
+        margin-left: calc((100vw - $sizeXl) / 2);
+      }
+    }
+    &--concept {
+      padding: 0 42px;
     }
 
     &--mixcast {
@@ -106,19 +125,43 @@ $sizeXl: 1140px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
+
+      @media (max-width: 1199px) {
+        flex-direction: column;
+      }
     }
     &--concept {
-      margin-top: 247px;
-      padding-bottom: 223px;
-      max-width: calc($sizeXl + ((100vw - $sizeXl) / 2));
+      @media (min-width: 992px) {
+        margin-top: 247px;
+        padding-bottom: 223px;
+        max-width: calc($sizeXl + ((100vw - $sizeXl) / 2));
+      }
+      @media (max-width: 991px) {
+        padding-bottom: 77px;
+        margin-top: 275px;
+        max-width: 435px;
+      }
     }
     &--filming {
       margin-top: 105.31px;
       padding-bottom: 330px;
-      margin-left: calc((100vw - 1440px) / 2);
+
+      @media (min-width: 1200px) {
+        margin-left: calc((100vw - 1440px) / 2);
+      }
     }
     &--ar {
-      margin-top: -205px;
+      @media (min-width: 1200px) {
+        margin-top: -205px;
+      }
+      @media (max-width: 1199px) {
+        margin-top: -315px;
+      }
+    }
+    &--dron {
+      @media (max-width: 1200px) {
+        padding-top: 210px;
+      }
     }
 
     &-title {
@@ -131,12 +174,23 @@ $sizeXl: 1140px;
       }
       &--mixcast {
         max-width: 487px;
-        margin-left: 39px;
+        @media (min-width: 1200px) {
+          margin-left: 39px;
+        }
+        @media (max-width: 1199px) {
+          margin: 16px auto 0;
+        }
       }
       &--filming {
         position: relative;
         max-width: 521px;
-        margin-left: 191px;
+        @media (min-width: 1200px) {
+          margin-left: 191px;
+        }
+        @media (max-width: 1199px) {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
     &-content {
@@ -174,9 +228,15 @@ $sizeXl: 1140px;
       display: block;
 
       &--mixcast {
-        @include exact-size(677px, 444px);
-        opacity: 0.4;
-        margin-left: -57px;
+        @media (min-width: 1200px) {
+          @include exact-size(677px, 444px);
+          opacity: 0.4;
+          margin-left: -57px;
+        }
+        @media (max-width: 1199px) {
+          width: 100%;
+          height: auto;
+        }
       }
       &--director, &--filming {
         mix-blend-mode: screen;
@@ -188,10 +248,28 @@ $sizeXl: 1140px;
         z-index: -1;
       }
       &--filming {
-        @include exact-size(1228.79px, 531.53px);
-        transform: rotate(4.22deg);
-        margin-left: -89px;
-        margin-top: -24.37px;
+        @media (min-width: 1200px) {
+          @include exact-size(1228.79px, 531.53px);
+          margin-left: -89px;
+          margin-top: -24.37px;
+          transform: rotate(4.22deg);
+        }
+        @media (max-width: 1199px) {
+          margin-left: -144px;
+          margin-top: 42.57px;
+          @include exact-size(530.42px, 229.44px);
+        }
+        @media (max-width: 991px) {
+          margin-left: -115px;
+          margin-top: -75px;
+          object-fit: cover;
+        }
+      }
+      &--dron {
+        @media (max-width: 1200px) {
+          @include exact-size(694.4px, 578.36px);
+          left: -242.35px;
+        }
       }
     }
     &-text {
@@ -206,58 +284,114 @@ $sizeXl: 1140px;
       &--filming {
         max-width: 480px;
         position: absolute;
-        top: calc(145px + 88.69px);
-        left: 598px;
         width: 100%;
+
+        @media (min-width: 1200px) {
+          top: calc(145px + 88.69px);
+          left: 598px;
+        }
+        @media (max-width: 1199px) {
+          top: calc(153px + 30px);
+          left: calc((100vw - 520px) / 2);
+        }
       }
       &--director {
         position: absolute;
 
         &--monitor {
-          top: 189px;
-          left: auto;
-          right: -238px;
           max-width: 340px;
+          @media (min-width: 1200px) {
+            top: 189px;
+            left: auto;
+            right: -238px;
+          }
+          @media (max-width: 1199px) {
+            left: 15px;
+            right: auto;
+            top: 0;
+          }
         }
         &--cameras {
           max-width: 245px;
-          top: auto;
-          bottom: 195px;
-          left: -83px;
+          @media (min-width: 1200px) {
+            top: auto;
+            bottom: 195px;
+            left: -83px;
+          }
+          @media (max-width: 1199px) {
+            left: 0;
+            top: calc(100% - 200px);
+          }
         }
         &--stabiliser {
           max-width: 275px;
-          top: auto;
-          bottom: 218px;
-          left: auto;
-          right: -211px;
+
+          @media (min-width: 1200px) {
+            top: auto;
+            bottom: 218px;
+            left: auto;
+            right: -211px;
+          }
+          @media (max-width: 1199px) {
+            left: auto;
+            right: 0;
+            top: 100%;
+          }
         }
       }
       &--dron, &--ar {
         position: absolute;
       }
       &--dron {
-        top: 299.21px;
-        left: auto;
-        right: 3.6px;
         max-width: 360px;
+        @media (min-width: 1200px) {
+          top: 299.21px;
+          left: auto;
+          right: 3.6px;
+        }
+        @media (max-width: 1199px) {
+          top: 352px;
+          left: auto;
+          right: 100px;
+        }
       }
       &--ar {
-        top: 205px;
-        left: -216px;
         max-width: 340px;
+        @media (min-width: 1200px) {
+          top: 205px;
+          left: -216px;
+        }
+        @media (max-width: 1199px) {
+          top: calc(100% - (211px + 50px));
+          left: calc(50vw - (340px / 2));
+        }
       }
     }
     &-video {
       &--concept, &--ar {
         position: absolute;
         top: 0;
-        left: 0;
         width: 100%;
-        height: 100%;
       }
       &--ar {
         mix-blend-mode: lighten;
+      }
+      &--ar {
+        @media (min-width: 1200px) {
+          height: 100%;
+          left: 0;
+        }
+        @media (max-width: 1199px) {
+          max-width: calc(100vw - (36px * 2));
+          left: 36px;
+        }
+      }
+      &--concept {
+        @media (max-width: 991px) {
+          @include exact-size(725px, 408px);
+          left: calc(50vw - (725px / 2));
+          top: calc(-125px + 153px);
+        }
       }
     }
   }

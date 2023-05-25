@@ -24,11 +24,21 @@
       &__video {
         position: absolute;
         top: 0;
-        width: 90%;
-        height: 100%;
         z-index: -1;
-        left: 10%;
-        min-height: 800px;
+
+        @media (min-width: 1200px) {
+          min-height: 800px;
+          width: 90%;
+          left: 10%;
+          height: 100%;
+        }
+        @media (max-width: 1199px) {
+          min-height: 80vh;
+          height: 80vh;
+          width: 90vw;
+          left: 10vw;
+        }
+
       }
 
       &__success {
@@ -65,9 +75,16 @@
       }
 
       &__container {
-        max-width: 1000px;
-        padding: 139px 0 28px;
-        margin: 0 auto 0 132px;
+        @media (min-width: 1200px) {
+          padding: 139px 0 28px;
+          margin: 0 auto 0 132px;
+          max-width: 1000px;
+        }
+        @media (max-width: 1199px) {
+          padding: 139px 0 28px;
+          margin: 0 auto;
+          max-width: 960px;
+        }
       }
 
       &-close {

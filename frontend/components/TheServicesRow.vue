@@ -3,7 +3,6 @@
     <div class="container">
       <div class="row">
         <div class="col col-12 col-md-9 offset-md-1">
-          <div class="row"></div>
           <div class="services-row-header">
             <div class="services-row-title" v-html="title" />
             <p class="services-row-subtitle" v-html="subtitle" />
@@ -56,30 +55,65 @@ export default {
 
 .services-row {
   &:not(&:first-child) {
-    margin-top: 100px;
+    @media (min-width: 992px) {
+      margin-top: 100px;
+    }
+    @media (max-width: 991px) {
+      margin-top: 64px;
+    }
   }
 
   &-header {
   }
   &-title {
-    @include text('white', 'titleRow');
+    @media (min-width: 992px) {
+      @include text('white', 'titleRow');
+    }
+    @media (max-width: 991px) {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: #FFFFFF;
+    }
   }
   &-subtitle {
     font-weight: 350;
-    margin-top: 5px;
-    @include text('white', 'subtitleRow');
+
+    @media (min-width: 992px) {
+      margin-top: 5px;
+      @include text('white', 'subtitleRow');
+    }
+    @media (max-width: 991px) {
+      margin-top: 4px;
+      font-size: 18px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
   }
   &-text {
-    margin-top: 40px;
-    @include text('white', 'subtitleRow');
-    font-weight: 350;
+    @media (min-width: 992px) {
+      margin-top: 40px;
+      @include text('white', 'subtitleRow');
+      font-weight: 350;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
 
   &-carousel {
     margin-top: 28px;
 
     &-padding {
-      padding-left: calc((100vw - 980px) / 2);
+      @media (min-width: 1200px) {
+        padding-left: calc(((100vw - 825px) / 2) - (20px * 3.3));
+      }
+      @media (max-width: 1199px) and (min-width: 992px) {
+        padding-left: calc(((100vw - 690px) / 2) - (20px * 3));
+      }
+      @media (max-width: 991px) and (min-width: 768px) {
+        padding-left: calc(((100vw - 540px) / 2) - 30px);
+      }
     }
   }
   &-item {

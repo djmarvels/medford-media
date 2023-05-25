@@ -62,20 +62,31 @@ export default {
 
 <style lang="scss">
 .footer {
-  padding: 600px 0 102px;
+  @media (min-width: 992px) {
+    padding: 600px 0 102px;
+  }
+  @media (max-width: 991px) {
+    padding: 294px 0 45px;
+  }
 
   &__social {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 194px auto 0;
-    gap: 0 50px;
     list-style-type: none;
-
     padding-left: 0;
 
     &__item:hover &__image path {
       fill: #14C1DE;
+    }
+
+    @media (min-width: 992px) {
+      gap: 0 50px;
+      margin: 194px auto 0;
+    }
+    @media (max-width: 991px) {
+      gap: 0 40px;
+      margin: 261px auto 0;
     }
   }
 
@@ -85,11 +96,19 @@ export default {
     align-self: flex-start;
     justify-content: flex-start;
     font-weight: 400;
-    font-size: 60px;
-    line-height: 124%;
     text-align: center;
     color: #FFFFFF;
-    gap: 50px 0;
+
+    @media (min-width: 992px) {
+      font-size: 60px;
+      line-height: 124%;
+      gap: 50px 0;
+    }
+    @media (max-width: 991px) {
+      gap: 40px 0;
+      font-size: 30px;
+      line-height: 36px;
+    }
 
     a {
       color: #FFFFFF;

@@ -47,18 +47,37 @@ export default {
 $duration: 50s;
 
 .ticker {
+  @media (max-width: 991px) {
+    margin-top: 42px;
+  }
   &-header {
     width: 100%;
-    padding-left: 51px;
-    @include text('white', 'title');
+
+    @media (min-width: 992px) {
+      padding-left: 51px;
+      @include text('white', 'title');
+    }
+    @media (max-width: 991px) {
+      max-width: calc(100% - (40px * 2));
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 111.5%;
+      color: #FFFFFF;
+    }
   }
   &-wrap {
     width: 100%;
-    margin: 36px auto 0;
     overflow: hidden;
     white-space: nowrap;
     bottom: 0;
     min-height: 170px;
+    margin: 36px auto 0;
+
+    @media (min-width: 992px) {
+    }
+    @media (max-width: 991px) {
+    }
 
     &-item {
       display: inline-block;

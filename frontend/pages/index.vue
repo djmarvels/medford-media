@@ -1,6 +1,9 @@
 <template>
   <div class="main">
-    <iframe id="mainVideo" ref="mainVideo" class="main-video" src="https://player.vimeo.com/video/820383465?autoplay=0&loop=1&autopause=0&muted=0&controls=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <iframe id="mainVideo" ref="mainVideo" :class="[
+        'main-video',
+        { 'main-video_open_mobile': mobileMenu }
+    ]" src="https://player.vimeo.com/video/820383465?autoplay=0&loop=1&autopause=0&muted=0&controls=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     <div class="container">
       <div class="row">
         <div class="main-info">
@@ -28,7 +31,7 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex';
+import { mapMutations, mapGetters } from 'vuex';
 import 'intersection-observer';
 
 import TheShowreel from '../components/TheShowreel.vue';
@@ -57,6 +60,11 @@ export default {
     TheReviews,
     TheTeam,
     TheFooter,
+  },
+  computed: {
+    ...mapGetters({
+      mobileMenu: 'page/mobileMenu',
+    })
   },
   mounted() {
     this.$nextTick(() => {
@@ -128,27 +136,67 @@ export default {
 .main {
   &-info {
     width: 100%;
-    padding-top: 76px;
-    padding-bottom: 138px;
-    padding-left: 51px;
+    @media (min-width: 992px) {
+      padding-top: 76px;
+      padding-bottom: 138px;
+      padding-left: 51px;
+    }
+    @media (max-width: 991px) {
+      padding: 141px 0 62px;
+    }
   }
   &-headline {
-    @include text('white', 'headline');
-    max-width: 755px;
     margin: 0;
+    color: #FFFFFF;
+    @media (min-width: 992px) {
+      @include text('white', 'headline');
+      max-width: 755px;
+    }
+    @media (max-width: 991px) {
+      max-width: calc(100% - (40px * 2));
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      margin: 0 auto;
+    }
   }
   &-subheadline {
-    margin: 40px 0 0;
-    @include text('white', 'subheadline');
-    max-width: 600px;
     font-weight: 350;
+    @media (min-width: 992px) {
+      margin: 40px 0 0;
+      @include text('white', 'subheadline');
+      max-width: 600px;
+    }
+    @media (max-width: 991px) {
+      max-width: calc(100% - (40px * 2));
+      margin: 70.42px auto 0;
+      font-size: 24px;
+      line-height: 30px;
+      color: #F5F5F5;
+    }
   }
   &-action-button {
-    margin-top: 63px;
     background-color: $lightblue;
-    border-radius: 20px;
-    padding: 24px 60px 30px;
-    @include text('white', 'headbutton');
+    text-align: center;
+
+    @media (min-width: 992px) {
+      margin-top: 63px;
+      border-radius: 20px;
+      padding: 24px 60px 30px;
+      @include text('white', 'headbutton');
+    }
+    @media (max-width: 991px) {
+      border-radius: 18px;
+      margin: 82px auto 0;
+      max-width: calc(100% - (40px * 2));
+      padding: 19px 38px 22px;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      color: #FFFFFF;
+      width: 100%;
+      display: block;
+    }
   }
 }
 </style>

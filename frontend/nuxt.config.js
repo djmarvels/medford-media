@@ -1,5 +1,10 @@
 module.exports = {
   target: 'static',
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0', // default: localhost,
+    timing: false
+  },
   head: {
     __dangerouslyDisableSanitizers: ['script'],
     script: [
@@ -19,7 +24,8 @@ module.exports = {
     extractCSS: false,
     transpile: [
       'vue-owl-carousel',
-      'v-easy-dialog'
+      'v-easy-dialog',
+      'moment'
     ],
     vendor: [
         'vue-owl-carousel',

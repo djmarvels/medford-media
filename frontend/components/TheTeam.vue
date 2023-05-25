@@ -8,6 +8,21 @@
           </h3>
         </div>
         <div class="col col-12">
+          <div class="team-persons-carousel">
+            <client-only>
+              <owl-carousel :nav="false" :dots="false" :autoWidth="true" :margin="27">
+                <div v-for="person in team" :key="person.id" class="team-person">
+                  <div class="team-person-image">
+                    <img :src="person.image" :alt="person.name">
+                  </div>
+                  <div class="team-person-text">
+                    <h6 class="team-person-name" v-html="person.name" />
+                    <p class="team-person-job" v-html="person.job" />
+                  </div>
+                </div>
+              </owl-carousel>
+            </client-only>
+          </div>
           <div class="team-persons">
             <div v-for="person in team" :key="person.id" class="team-person">
               <div class="team-person-image">
@@ -49,23 +64,52 @@ export default {
 @import '../assets/styles/mixins';
 
 .team {
-  margin-top: 375px;
+  @media (min-width: 992px) {
+    margin-top: 375px;
+  }
+  @media (max-width: 991px) {
+    margin-top: 162px;
+  }
 
   &-title {
-    @include text('white', 'headbutton');
+    @media (min-width: 992px) {
+      @include text('white', 'headbutton');
+    }
+    @media (max-width: 991px) {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 48px;
+      color: #FFFFFF;
+    }
   }
 
   &-persons {
-    margin-top: 82px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 90px 20px;
+    @media (min-width: 992px) {
+      margin-top: 82px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 90px 20px;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+
+    &-carousel {
+      @media (min-width: 992px) {
+        display: none;
+      }
+      @media (max-width: 991px) {
+        margin-top: 23px;
+      }
+    }
   }
 
   &-person {
-    @include exact-col(calc(100% / 4 - 16px));
+    @media (min-width: 992px) {
+      @include exact-col(calc(100% / 4 - 16px));
+    }
 
     &-text {
       margin-top: 24px;
@@ -75,6 +119,9 @@ export default {
       padding: 0 10px;
       gap: 10px;
       flex-grow: 0;
+      @media (max-width: 991px) {
+        max-width: 250px;
+      }
     }
 
     &-name, &-job {
@@ -97,8 +144,15 @@ export default {
 
     &-image {
       img {
-        max-width: 100%;
-        height: auto;
+        @media (min-width: 992px) {
+          max-width: 100%;
+          height: auto;
+        }
+        @media (max-width: 991px) {
+          @include exact-size(250px, 385px);
+          object-fit: cover;
+          border-radius: 20px;
+        }
       }
     }
   }

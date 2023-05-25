@@ -11,6 +11,10 @@ body {
 
   background: #050A0F;
   font-family: 'Normalidad', sans-serif;
+
+  &.overflow {
+    overflow: hidden;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

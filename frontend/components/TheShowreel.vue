@@ -25,11 +25,24 @@ export default {
 @import '../assets/styles/mixins';
 
 .showreel {
-  margin-top: calc(84px + 43px);
-  padding-left: 51px;
+  @media (min-width: 992px) {
+    margin-top: calc(84px + 43px);
+    padding-left: 51px;
+  }
+  @media (max-width: 991px) {
+    margin-top: 38px;
+  }
 
   &-title {
-    @include text('white', 'title');
+    @media (min-width: 992px) {
+      @include text('white', 'title');
+    }
+    @media (max-width: 991px) {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 111.5%;
+      color: #FFFFFF;
+    }
   }
   &-video {
     margin: 29px auto 0;

@@ -19,12 +19,30 @@ export default {
 @import '../assets/styles/mixins';
 
 .reviews {
-  margin-top: 375px;
+  @media (min-width: 992px) {
+    margin-top: 375px;
+  }
+  @media (max-width: 991px) {
+    margin-top: 128px;
+  }
   &-title {
-    @include text('white', 'headbutton');
+    @media (min-width: 992px) {
+      @include text('white', 'headbutton');
+    }
+    @media (max-width: 991px) {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 48px;
+      color: #FFFFFF;
+    }
   }
   &-image {
-    margin-top: 119px;
+    @media (min-width: 992px) {
+      margin-top: 119px;
+    }
+    @media (max-width: 991px) {
+      margin-top: 48px;
+    }
 
     img {
       max-width: 100%;

@@ -7,10 +7,18 @@ $textColors: (
   "white": #ffffff,
   "lightblue": #14C1DE
 );
+$extensions: (
+  "lg": 1199px
+);
 $textSizes: (
   "menu": (
     "size": 24px,
     "line-height": 124%,
+    "responsive": (
+      "lg": (
+        "size": 20px
+      )
+    )
   ),
   "link": (
     "size": 24px,
@@ -27,6 +35,12 @@ $textSizes: (
   "headbutton": (
     "size": 64px,
     "line-height": 70px,
+    "responsive": (
+      "lg": (
+        "size": 60px,
+        "line-height": 66px,
+      )
+    )
   ),
   "title": (
     "size": 48px,
@@ -49,6 +63,25 @@ $textSizes: (
   @if ($size) {
     font-size: map-get(map-get($textSizes, $size), 'size');
     line-height: map-get(map-get($textSizes, $size), 'line-height');
+
+    $responsive: map-get(map-get($textSizes, $size), 'responsive');
+
+    @if ($responsive) {
+      @each $extension, $values in $responsive {
+        $maxWidth: map-get($extensions, $extension);
+        @media (max-width: #{$maxWidth}) {
+          $fontSize: map-get($values, 'size');
+          $lineHeight: map-get($values, 'line-height');
+
+          @if $fontSize {
+            font-size: $fontSize;
+          }
+          @if $lineHeight {
+            line-height: $lineHeight;
+          }
+        }
+      }
+    }
   }
 }
 
