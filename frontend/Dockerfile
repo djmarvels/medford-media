@@ -15,7 +15,7 @@ WORKDIR /app/frontend/
 RUN rm -rf node_modules
 # Build the application for production
 RUN npm ci
-#RUN npm run build
+RUN npm run build
 
 
 # Expose port 3000 to the Docker host
