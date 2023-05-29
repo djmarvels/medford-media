@@ -14,7 +14,7 @@ WORKDIR /app/frontend/
 
 RUN rm -rf node_modules
 # Build the application for production
-RUN npm ci
+RUN npm install
 RUN npm run build
 
 
