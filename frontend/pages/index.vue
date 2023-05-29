@@ -28,6 +28,7 @@
     <the-slider />
     <the-reviews />
     <the-team />
+    <the-telegram-posts />
     <the-footer />
   </div>
 </template>
@@ -44,6 +45,7 @@ import TheCreate from '../components/TheCreate.vue';
 import TheSlider from '../components/TheSlider.vue';
 import TheReviews from '../components/TheReviews.vue';
 import TheTeam from '../components/TheTeam.vue';
+import TheTelegramPosts from '../components/TheTelegramPosts.vue';
 import TheFooter from '../components/TheFooter.vue';
 
 export default {
@@ -61,6 +63,7 @@ export default {
     TheSlider,
     TheReviews,
     TheTeam,
+    TheTelegramPosts,
     TheFooter,
   },
   computed: {

@@ -25,7 +25,14 @@ module.exports = {
   ],
   modules: [
     'vue-scrollto/nuxt',
+    '@nuxtjs/axios',
   ],
+  axios: {
+    proxy: true,
+  },
+  proxy: {
+    '/rss': "https://tg.i-c-a.su/rss"
+  },
   plugins: [
     { src: './plugins/owl-carousel', ssr: false },
     { src: './plugins/vue-tel-input', ssr: false },

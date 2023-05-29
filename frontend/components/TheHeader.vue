@@ -95,9 +95,9 @@ export default {
         }
       },
       {
-        label: 'Обзор',
+        label: 'За кадром',
         scrollTo: {
-          el: '#create', duration: 500, offset: -40
+          el: '#behind', duration: 500, offset: -40
         }
       },
       {
