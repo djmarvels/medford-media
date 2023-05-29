@@ -1,5 +1,5 @@
 <template>
-  <v-easy-dialog v-model="viewCallBack" :persistent="true" width="320px" backdropClass="callback">
+  <v-easy-dialog v-model="viewCallBack" :persistent="true" width="320px" backdropClass="callback" focus-on="#phone-number">
     <div class="callback-inner">
       <h3 class="callback-title">Созвон</h3>
       <button type="button" class="callback-close" @click="setCallbackPopup(false)">
@@ -47,10 +47,15 @@
       </div>
 
       <div class="callback__number">
-        <input type="text" class="callback__number__element" placeholder="Номер телефона">
+        <vue-tel-input :inputOptions="{
+          placeholder: 'Номер телефона', id: 'phone-number'
+        }" :defaultCountry="'ru'" v-model="phoneNumber" mode="international" @validate="validatePhone" />
       </div>
 
-      <button class="callback__submit" type="button">
+      <button :class="[
+          'callback__submit',
+          { 'callback__submit_active': phoneObject.valid }
+      ]" type="button">
         Жду звонка
       </button>
 
@@ -73,6 +78,10 @@ export default {
     timeCallBack: null,
     currentHour: null,
     currentMinutes: null,
+    phoneNumber: null,
+    phoneObject: {
+      valid: false,
+    },
   }),
   watch: {
     callbackPopup: {
@@ -110,6 +119,18 @@ export default {
     ...mapMutations({
       setCallbackPopup: 'page/SET_CALLBACK_POPUP',
     }),
+    validatePhone(phoneObject) {
+      if (phoneObject.valid) {
+        this.phoneObject = {
+          valid: true,
+          countryCode: phoneObject.countryCode,
+          countryName: phoneObject.country.name,
+          number: phoneObject.number,
+        };
+      } else {
+        this.phoneObject.valid = false;
+      }
+    },
     initCallBack() {
       this.dateCallBack = new Date();
       this.timeCallBack = new Date();

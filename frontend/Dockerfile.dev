@@ -7,10 +7,14 @@ FROM node:16-alpine
 # Set the working directory
 WORKDIR /app/
 
+
+
 # # Copy package.json and package-lock.json files to the container
 COPY frontend/package*.json ./
 
 # Install dependencies
+RUN npm config rm proxy
+RUN npm config rm https-proxy
 RUN npm install
 
 # build app for production with minification
@@ -20,4 +24,4 @@ WORKDIR /app/frontend
 EXPOSE 3000
 
 # see frontend/package.json:: "scripts": "dev" block
-CMD ["npm", "run", "dev", "--inspect node_modules/.bin/nuxt"]
+CMD ["npm", "run", "dev"]

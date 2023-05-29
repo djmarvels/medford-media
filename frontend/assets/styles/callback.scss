@@ -1,6 +1,64 @@
 @import 'vue2-datepicker/index.css';
 @import 'mixins';
 
+.service-video {
+  background-color: rgba(0, 0, 0, 0.7)!important;
+  .v-easy-dialog {
+    &--backdrop {
+      &-btn {
+        background: rgba(0,0,0,0)!important;
+      }
+    }
+    &--content {
+      &-container {
+        max-width: 100%!important;
+        max-height: 100%!important;
+        min-height: 100%!important;
+        background: none!important;
+        //overflow: inherit!important;
+
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+
+        &::-webkit-scrollbar, &::-webkit-scrollbar-thumb {
+          display: none;  /* Safari and Chrome */
+          background: rgba(0,0,0,0);
+        }
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__iframe {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include exact-size(calc(100vw * 0.8), calc((100vw * 0.8) / 1.778));
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    left: auto;
+    right: 20px;
+    background: none!important;
+    outline: none!important;
+    border: 0!important;
+    margin: 0!important;
+
+    &, svg {
+      @include exact-size(40px, 40px);
+    }
+  }
+}
+
 .callback {
   background-color: rgba(0, 0, 0, 0.7)!important;
   .v-easy-dialog {
@@ -157,8 +215,6 @@
 
   &__submit {
     display: block;
-    background: rgba(255, 255, 255, 0.3);
-    opacity: 0.4;
     border-radius: 12px;
     font-style: normal;
     font-weight: 400;
@@ -167,29 +223,63 @@
     color: #FFFFFF;
     padding: 13px 23px 15px 22px;
     margin: 61px auto 0;
+    transition: all 0.25s 0s ease-in-out;
+
+    &:not(&_active) {
+      background-color: rgba(255, 255, 255, 0.3);
+      opacity: 0.4;
+    }
+
+    &_active {
+      background-color: #14C1DE;
+    }
   }
 
   &__number {
     margin-top: 47px;
     position: relative;
 
-    opacity: 0.4;
+    .vue-tel-input {
+      border-radius: 0;
+      border: none;
 
-    &__element {
-      font-style: normal;
-      font-weight: 350;
-      font-size: 24px;
-      line-height: 30px;
-      color: #FFFFFF;
-      padding: 0;
-      margin: 0;
-      border: 0;
-      outline: none;
-      display: block;
-      width: 100%;
-      background: none!important;
-      &::placeholder {
-        color: #FFFFFF;
+      .vti {
+        &__dropdown {
+          padding: 0;
+          pointer-events: none;
+          user-select: none;
+          &-arrow {
+            display: none;
+          }
+          &:hover {
+            background-color: rgba(0,0,0,0);
+          }
+        }
+        &__flag {
+          background-color: rgba(0,0,0,0);
+          box-shadow: none;
+        }
+        &__input {
+          font-style: normal;
+          font-weight: 350;
+          color: #FFFFFF;
+          padding: 0;
+          margin: 0;
+          border: 0;
+          outline: none;
+          display: block;
+          width: 100%;
+          background: none!important;
+          font-size: 20px;
+          line-height: 100%;
+          &::placeholder {
+            color: rgba(255,255,255,0.4);
+          }
+        }
+      }
+
+      &:focus-within {
+        box-shadow: none;
       }
     }
 

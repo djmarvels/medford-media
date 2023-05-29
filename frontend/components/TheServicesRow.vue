@@ -10,13 +10,38 @@
         </div>
       </div>
     </div>
+    <div class="services-row-popups">
+      <client-only>
+        <v-easy-dialog backdropClass="service-video" :width="`${sizeVideo}px`" v-for="item in items" :key="`services-row-popup-${item.id}`" v-model="item.popup">
+          <div class="service-video__container">
+            <iframe v-if="sizeVideo && item.popup" class="service-video__iframe"
+                    :src="`https://www.youtube.com/embed/${item.youtubeId}?controls=0&muted=1&autoplay=1`"
+                    allow="autoplay; encrypted-media; fullscreen;"
+                    allowfullscreen="allowfullscreen"
+                    mozallowfullscreen="mozallowfullscreen"
+                    msallowfullscreen="msallowfullscreen"
+                    oallowfullscreen="oallowfullscreen"
+                    webkitallowfullscreen="webkitallowfullscreen"
+                    frameborder="0" :width="`${sizeVideo * 0.8}px`" :height="`${(sizeVideo * 0.8) / 1.778}px`"
+            />
+
+            <button class="service-video__close" @click="item.popup = false">
+              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M52 2L2 52" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <path d="M2 2L52 52" stroke="white" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </v-easy-dialog>
+      </client-only>
+    </div>
     <div class="services-row-carousel">
       <client-only>
         <owl-carousel :nav="false" :dots="false" :autoWidth="true" :margin="20">
           <div class="services-row-carousel-padding" />
-          <a v-for="item in items" :key="`services-row-item-${item.id}`" :href="item.href" target="_blank" class="services-row-item">
+          <button v-for="item in items" :key="`services-row-item-${item.id}`" type="button" @click.prevent="openVideo(item)" class="services-row-item">
             <img class="services-row-image" :src="require(`../assets/images/${item.src}`)" :alt="`services-row-item-${item.id}`">
-          </a>
+          </button>
         </owl-carousel>
       </client-only>
     </div>
@@ -46,7 +71,17 @@ export default {
     items: {
       type: Array, required: false, default: []
     },
-  }
+  },
+  computed: {
+    sizeVideo() {
+      return typeof window !== 'undefined' && window.innerWidth ? Number(window.innerWidth) : null;
+    },
+  },
+  methods: {
+    openVideo(item) {
+      item.popup = true;
+    }
+  },
 }
 </script>
 
@@ -124,6 +159,12 @@ export default {
     position: relative;
     overflow: hidden;
     display: block;
+    background: none!important;
+    padding: 0!important;
+    border: 0!important;
+    margin: 0!important;
+    -webkit-appearance: none!important;
+    outline: none!important;
 
     @media (min-width: 375px) {
       @include exact-size(320px, 180px);
@@ -137,6 +178,8 @@ export default {
     width: 100%;
     height: 100%;
     display: block;
+    top: 0;
+    left: 0;
 
     @media (min-width: 375px) {
       transform: scale(1.01);

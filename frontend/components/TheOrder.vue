@@ -22,16 +22,28 @@
               </ul>
             </div>
             <div class="order-form" key="order-form">
-              <div class="order-form__group">
-                <input id="input-name" placeholder="Имя" class="input order-form__group__input" name="company" />
+              <div :class="[
+                  'order-form__group',
+                  { 'order-form__group_active': (orderForm.companyName.length > 0) }
+              ]">
+                <input id="input-name" placeholder="Имя" class="input order-form__group__input" name="company" v-model="orderForm.companyName" />
               </div>
-              <div class="order-form__group">
-                <input placeholder="Телефон или удобный мененджер" class="input order-form__group__input" name="phone" />
+              <div :class="[
+                  'order-form__group',
+                  { 'order-form__group_active': (orderForm.phoneNumber.length > 0) }
+              ]">
+                <input placeholder="Телефон или удобный мененджер" class="input order-form__group__input" name="phone" v-model="orderForm.phoneNumber" />
               </div>
-              <div class="order-form__group">
-                <input placeholder="Электропочта" class="input order-form__group__input" name="mail" />
+              <div :class="[
+                  'order-form__group',
+                  { 'order-form__group_active': (orderForm.email.length > 0) }
+              ]">
+                <input placeholder="Электропочта" class="input order-form__group__input" name="mail" v-model="orderForm.email" />
               </div>
-              <button type="button" class="order-form__submit" @click="submitForm">Отправить заявку</button>
+              <button type="button" :class="[
+                  'order-form__submit',
+                  { 'order-form__submit_active': validateForm }
+              ]" @click="submitForm">Отправить заявку</button>
             </div>
           </template>
         </transition-group>
@@ -40,7 +52,7 @@
           <button v-if="viewOrder && viewOrderContent" type="button" class="order-close" @click="hidePopUp" key="order-close">
             <img class="order-close__icon" src="../assets/images/order_close.svg" alt="Close" />
           </button>
-          <iframe v-if="viewOrder && viewOrderContent" key="popupVideo" id="popupVideo" ref="popupVideo" class="order__video" src="https://player.vimeo.com/video/820383465?autoplay=0&loop=1&autopause=0&muted=0&controls=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen />
+          <iframe v-if="viewOrder && viewOrderContent" key="popupVideo" id="popupVideo" ref="popupVideo" class="order__video" src="https://player.vimeo.com/video/820383465?autoplay=0&loop=1&autopause=0&muted=1&controls=0&playsinline=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen />
         </transition-group>
       </div>
     </div>
@@ -54,22 +66,33 @@ export default {
   name: 'TheOrder',
   data: () => ({
     slugs: [
-      { id: 1, title: 'Имиджевый видеоролик', active: true },
+      { id: 1, title: 'Имиджевый видеоролик', active: false },
       { id: 2, title: 'Видеоблог', active: false },
-      { id: 3, title: 'Вебинар', active: true },
+      { id: 3, title: 'Вебинар', active: false },
       { id: 4, title: 'Подкаст', active: false },
     ],
     viewOrder: false,
     viewOrderContent: false,
     player: null,
     successForm: false,
+    orderForm: {
+      companyName: '',
+      phoneNumber: '',
+      email: '',
+    },
   }),
   computed: {
     ...mapGetters({
       orderPopup: 'page/orderPopup',
     }),
+    validateForm() {
+      return Boolean(this.orderForm.companyName.length && (this.orderForm.phoneNumber.length || this.orderForm.email.length));
+    },
     viewOrderForm() {
       return Boolean(this.viewOrder && this.viewOrderContent && !this.successForm);
+    },
+    activeSlugs() {
+      return Array(...this.slugs).filter(item => Boolean(item.active));
     },
   },
   watch: {

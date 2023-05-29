@@ -17,7 +17,7 @@
           <p class="slider-text"><b>Наша студия</b> с&nbsp;панорамным видом на&nbsp;Москву, для записи видео и&nbsp;подкастов, расположена на&nbsp;33&nbsp;этаже Центрального дома туристов</p>
         </div>
         <div class="col col-12">
-          <button type="button" class="slider-button">Заказать услуги</button>
+          <button type="button" class="slider-button" @click="setOrderPopup(true)">Заказать услуги</button>
         </div>
       </div>
     </div>
@@ -25,8 +25,15 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+
 export default {
   name: 'TheSlider',
+  methods: {
+    ...mapMutations({
+      setOrderPopup: 'page/SET_ORDER_POPUP',
+    }),
+  },
 }
 </script>
 

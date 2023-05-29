@@ -21,10 +21,15 @@ module.exports = {
   },
   css: [
     'bootstrap/scss/bootstrap.scss',
+    'vue-tel-input/vue-tel-input.css',
     './assets/styles/main.scss',
+  ],
+  modules: [
+    'vue-scrollto/nuxt',
   ],
   plugins: [
     { src: './plugins/owl-carousel', ssr: false },
+    { src: './plugins/vue-tel-input', ssr: false },
   ],
   build: {
     // publicPath: '/_nuxt/',
@@ -37,7 +42,8 @@ module.exports = {
     ],
     vendor: [
         'vue-owl-carousel',
-        'v-easy-dialog'
+        'v-easy-dialog',
+        'vue-tel-input'
     ]
   }
 };

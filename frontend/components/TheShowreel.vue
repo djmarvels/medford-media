@@ -7,7 +7,7 @@
         </div>
         <div class="col col-12">
           <div class="showreel-video">
-            <iframe id="showReelVideo" ref="showReelVideo" class="showreel-video-frame" src="https://player.vimeo.com/video/821658436?autoplay=0&loop=1&autopause=0&muted=0&controls=1" width="1281" height="747" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe id="showReelVideo" ref="showReelVideo" class="showreel-video-frame" src="https://player.vimeo.com/video/821658436?autoplay=0&loop=1&autopause=0&muted=1&controls=1&sound=0&playsinline=0" width="1281" height="747" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       </div>

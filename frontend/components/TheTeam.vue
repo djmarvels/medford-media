@@ -38,11 +38,18 @@
           </client-only>
         </div>
       </div>
+      <div class="row">
+        <div class="col col-12">
+          <button type="button" class="team-button" @click="setOrderPopup(true)">Заказать услуги</button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+
 export default {
   name: 'TheTeam',
   data: () => ({
@@ -58,6 +65,11 @@ export default {
   }),
   created() {
     this.team = this.team.map(item => ({...item, image: require(`../assets/images/${item.image}`)}));
+  },
+  methods: {
+    ...mapMutations({
+      setOrderPopup: 'page/SET_ORDER_POPUP',
+    }),
   },
 }
 </script>
@@ -162,6 +174,41 @@ export default {
           border-radius: 20px;
         }
       }
+    }
+  }
+  &-button {
+    background-color: $lightblue;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    @media (min-width: 992px) {
+      margin-top: 100px;
+      @include text('white', 'headbutton');
+      border-radius: 20px;
+      padding: 24px 60px 30px;
+    }
+
+    @media (max-width: 991px) {
+      margin-top: 59px;
+      padding: 19px 38px 22px;
+      border-radius: 18px;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    @media (max-width: 575px) {
+      white-space: nowrap;
+      max-width: max-content;
+      font-size: 28px;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 24px;
+      padding: 14px 34px 14px;
     }
   }
 }

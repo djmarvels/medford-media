@@ -1,13 +1,13 @@
 <template>
   <div class="create">
-    <h3 class="create-title">Всё что нужно для создания видео и&nbsp;аудио контента</h3>
+    <h3 id="create" class="create-title">Всё что нужно для создания видео и&nbsp;аудио контента</h3>
 
     <div class="create-item create-item--concept">
       <h6 class="create-item-title create-item-title--concept">
         Разработаем концепцию и&nbsp;сценарий, которые помогут потребителям влюбиться в&nbsp;ваш продукт
       </h6>
       <div class="create-item-content create-item-content--concept">
-        <iframe id="conceptVideo" ref="conceptVideo" class="create-item-video create-item-video--concept" src="https://player.vimeo.com/video/820890583?autoplay=0&loop=1&autopause=0&muted=0&controls=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen />
+        <iframe id="conceptVideo" ref="conceptVideo" class="create-item-video create-item-video--concept" src="https://player.vimeo.com/video/820890583?autoplay=0&loop=1&autopause=0&muted=1&controls=0&playsinline=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen />
       </div>
     </div>
 
@@ -61,7 +61,7 @@
 
     <div class="create-item create-item--ar">
       <div class="create-item-content create-item-content--ar">
-        <iframe id="arVideo" ref="arVideo" class="create-item-video create-item-video--ar" src="https://player.vimeo.com/video/821062305?autoplay=0&loop=1&autopause=0&muted=0&controls=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen />
+        <iframe id="arVideo" ref="arVideo" class="create-item-video create-item-video--ar" src="https://player.vimeo.com/video/821062305?autoplay=0&loop=1&autopause=0&muted=1&controls=0&playsinline=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen />
         <p class="create-item-text create-item-text--ar">
           <b>Очки дополненной реальности</b> показывают интеракивные подсказки и&nbsp;позволяют проводить вебинары по&nbsp;ремонту оборудования со&nbsp;съемкой от&nbsp;первого лица
         </p>
