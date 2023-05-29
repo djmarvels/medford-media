@@ -21,7 +21,6 @@ module.exports = {
   },
   css: [
     'bootstrap/scss/bootstrap.scss',
-    'vue-tel-input/vue-tel-input.css',
     './assets/styles/main.scss',
   ],
   modules: [
