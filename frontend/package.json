@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build --hostname 0.0.0.0",
     "dev": "nuxt --hostname 0.0.0.0",
     "generate": "nuxt generate",
-    "start": "nuxt start --hostname 0.0.0.0"
+    "start": "nuxt build && nuxt start --hostname 0.0.0.0"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
