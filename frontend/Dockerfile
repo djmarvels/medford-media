@@ -12,8 +12,9 @@ COPY frontend/package*.json ./
 # Copy the rest of the application files to the container
 WORKDIR /app/frontend/
 
+RUN rm -rf node_modules
 # Build the application for production
-RUN npm install
+RUN npm ci
 RUN npm run build
 
 
