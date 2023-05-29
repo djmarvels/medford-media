@@ -48,7 +48,7 @@
 
       <div class="callback__number">
         <vue-tel-input :inputOptions="{
-          placeholder: 'Номер телефона', id: 'phone-number'
+          placeholder: 'Номер телефона', id: 'phone-number', showDialCode: true
         }" :defaultCountry="'ru'" v-model="phoneNumber" mode="international" @validate="validatePhone" />
       </div>
 

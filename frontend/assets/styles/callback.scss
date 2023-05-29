@@ -239,50 +239,6 @@
     margin-top: 47px;
     position: relative;
 
-    .vue-tel-input {
-      border-radius: 0;
-      border: none;
-
-      .vti {
-        &__dropdown {
-          padding: 0;
-          pointer-events: none;
-          user-select: none;
-          &-arrow {
-            display: none;
-          }
-          &:hover {
-            background-color: rgba(0,0,0,0);
-          }
-        }
-        &__flag {
-          background-color: rgba(0,0,0,0);
-          box-shadow: none;
-        }
-        &__input {
-          font-style: normal;
-          font-weight: 350;
-          color: #FFFFFF;
-          padding: 0;
-          margin: 0;
-          border: 0;
-          outline: none;
-          display: block;
-          width: 100%;
-          background: none!important;
-          font-size: 20px;
-          line-height: 100%;
-          &::placeholder {
-            color: rgba(255,255,255,0.4);
-          }
-        }
-      }
-
-      &:focus-within {
-        box-shadow: none;
-      }
-    }
-
     &::after {
       content: '';
       display: block;
@@ -290,5 +246,49 @@
       margin-top: 12px;
       border: 1px solid #FFFFFF;
     }
+  }
+}
+
+.vue-tel-input {
+  border-radius: 0;
+  border: none;
+
+  .vti {
+    &__dropdown {
+      padding: 0;
+      pointer-events: none;
+      user-select: none;
+      &-arrow {
+        display: none;
+      }
+      &:hover {
+        background-color: rgba(0,0,0,0);
+      }
+    }
+    &__flag {
+      background-color: rgba(0,0,0,0);
+      box-shadow: none;
+    }
+    &__input {
+      font-style: normal;
+      font-weight: 350;
+      color: #FFFFFF;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      outline: none;
+      display: block;
+      width: 100%;
+      background: none!important;
+      font-size: 20px;
+      line-height: 100%;
+      &::placeholder {
+        color: rgba(255,255,255,0.4);
+      }
+    }
+  }
+
+  &:focus-within {
+    box-shadow: none;
   }
 }

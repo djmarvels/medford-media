@@ -129,6 +129,13 @@
         }
       }
       &-form {
+        &__tel-input {
+          .vti {
+            &__dropdown {
+              display: none!important;
+            }
+          }
+        }
         @media (min-width: 992px) {
           padding: 60px 0;
         }

@@ -30,9 +30,11 @@
               </div>
               <div :class="[
                   'order-form__group',
-                  { 'order-form__group_active': (orderForm.phoneNumber.length > 0) }
+                  { 'order-form__group_active': (phoneObject.valid) }
               ]">
-                <input placeholder="Телефон или удобный мененджер" class="input order-form__group__input" name="phone" v-model="orderForm.phoneNumber" />
+                <vue-tel-input class="order-form__tel-input" :inputOptions="{
+                  placeholder: 'Номер телефона', id: 'phone-number', showDialCode: true, styleClasses: 'input order-form__group__input'
+                }" :defaultCountry="'ru'" v-model="orderForm.phoneNumber" mode="international" @validate="validatePhone" />
               </div>
               <div :class="[
                   'order-form__group',
@@ -80,13 +82,16 @@ export default {
       phoneNumber: '',
       email: '',
     },
+    phoneObject: {
+      valid: false,
+    },
   }),
   computed: {
     ...mapGetters({
       orderPopup: 'page/orderPopup',
     }),
     validateForm() {
-      return Boolean(this.orderForm.companyName.length && (this.orderForm.phoneNumber.length || this.orderForm.email.length));
+      return Boolean(this.orderForm.companyName.length && (this.phoneObject.valid || this.orderForm.email.length));
     },
     viewOrderForm() {
       return Boolean(this.viewOrder && this.viewOrderContent && !this.successForm);
@@ -149,6 +154,18 @@ export default {
     async hidePopUp() {
       this.viewOrderContent = false;
       this.setOrderPopup(false);
+    },
+    validatePhone(phoneObject) {
+      if (phoneObject.valid) {
+        this.phoneObject = {
+          valid: true,
+          countryCode: phoneObject.countryCode,
+          countryName: phoneObject.country.name,
+          number: phoneObject.number,
+        };
+      } else {
+        this.phoneObject.valid = false;
+      }
     },
   },
 }

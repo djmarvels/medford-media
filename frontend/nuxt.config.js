@@ -39,8 +39,8 @@ module.exports = {
   ],
   build: {
     // publicPath: '/_nuxt/',
-    cssSourceMap: false,
-    extractCSS: false,
+    // cssSourceMap: false,
+    // extractCSS: false,
     transpile: [
       'vue-owl-carousel',
       'v-easy-dialog',
