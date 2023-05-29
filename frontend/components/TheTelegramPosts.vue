@@ -8,11 +8,11 @@
           </h3>
         </div>
         <div class="col col-12 tg__posts__content">
-          <the-masonry-grid :items.sync="posts" :column-width="columnWidth" :gap="12" class="brain-slogans__group">
+          <the-masonry-grid v-if="postLoading" :items.sync="posts" :column-width="columnWidth" :gap="12" class="tg__posts__content__grid">
             <template #default="{ item }">
               <a class="tg__posts__item" :href="item.link" target="_blank">
-                <span v-if="item.content" :class="[
-                    'tg__posts__item__content',
+                <p v-if="item.content" :class="[
+                    'tg__posts__item__content clamp',
                     { 'tg__posts__item__content_video': item.media.video },
                     { 'tg__posts__item__content_image': item.media.image }
                 ]" v-html="item.content" />
@@ -48,7 +48,7 @@ export default {
       posts: 'channel/posts'
     }),
     columnWidth() {
-      return typeof window !== 'undefined' && Number.isInteger(window.innerWidth) ? Number(window.innerWidth >= 1920 ? 300 : ((window.innerWidth - 40) / 3) - (12 * 2)) : 300;
+      return typeof window !== 'undefined' && Number.isInteger(window.innerWidth) ? Number(((1140 - (12 * 3)) / 3) - (12 * 2)) : 200;
     },
   },
   mounted() {
@@ -134,7 +134,7 @@ export default {
         }
       }
 
-      br:first-child {
+      br:first-child, br:last-child {
         display: none;
       }
     }

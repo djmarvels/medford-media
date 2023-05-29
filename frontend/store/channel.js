@@ -24,7 +24,6 @@ export default {
         },
         ADD_POST_ITEM(state, payload) {
             state.posts.push(payload);
-            console.log('add>:', payload);
         },
     },
     actions: {
@@ -71,8 +70,6 @@ export default {
                           }
                       }
                       if ((itemContent && itemContent.textContent) && (itemLink && itemLink.textContent) && (itemDate && itemDate.textContent)) {
-                          console.log(itemDate.textContent);
-
                           const dateFormat = (date) => {
                               return moment(date).calendar({
                                   sameDay: '[Today]',
@@ -84,15 +81,27 @@ export default {
                               });
                           };
 
+                          const kitcut = ( text, limit) => {
+                              text = text.trim();
+                              if( text.length <= limit) return text;
+                              text = text.slice( 0, limit); // тупо отрезать по лимиту
+                              let lastSpace = text.lastIndexOf(" ");
+                              if( lastSpace > 0) { // нашлась граница слов, ещё укорачиваем
+                                  text = text.substr(0, lastSpace);
+                              }
+                              return text + '&hellip;';
+                          }
+                          const content = kitcut(String(itemContent.textContent), 500);
+
                           commit('ADD_POST_ITEM', {
-                              content: itemContent.textContent,
+                              content,
                               link: itemLink.textContent,
                               date: dateFormat(itemDate.textContent),
                               media
                           });
                       }
                   });
-                  commit('SET_POST_LOADING', false);
+                  commit('SET_POST_LOADING', true);
               }
           } catch (error) {
               console.log(error);

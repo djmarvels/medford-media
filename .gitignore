@@ -5,3 +5,4 @@ frontend/.nuxt
 frontend/node_modules
 .idea
 .idea/*
+/backend/rss.cache.txt
