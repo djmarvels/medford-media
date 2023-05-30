@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Видео производство | Medford.media</title>
+    <link>https://tg.i-c-a.su</link>
+    <description>Авторский блог о технологиях видеопроизводства. Практические советы для начинающих, сравнительные тесты техники, интересные фишки, мини-уроки по съёмке и монтажу.
+Обратная связь, вопросы, пожелания –  всегда пожалуйста: @KonstantinDavydkin</description>
+    <pubDate>Thu, 20 Jul 2017 11:00:14 +0300</pubDate>
+    <lastBuildDate>Thu, 20 Jul 2017 11:00:14 +0300</lastBuildDate>
+    <atom:link rel="self" type="application/rss+xml" href="https://tg.i-c-a.su/rss/video_medford_media"/>
+    <item>
+      <title>[Media] Консервируем впечатления: несколько простых правил</title>
+      <description>&lt;br/&gt;&lt;strong&gt;Консервируем впечатления: несколько простых правил&lt;/strong&gt;&lt;br /&gt;
+&lt;br /&gt;
+Лето перевалило за середину: страшно подумать, что скоро уже и август. Срочно отдыхать, срочно путешествовать и заготавливать впечатления на зиму! О том, как это сделать, чтоб потом не жалеть – в этом посте.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://telegra.ph/Travel-video-sobiraem-chemodany-i-snimaem-film-o-poezdke-CHto-vzyat-s-soboj-07-11" target="_blank" rel="nofollow"&gt;Читать полезный пост:&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="http://telegra.ph/Travel-video-sobiraem-chemodany-i-snimaem-film-o-poezdke-CHto-vzyat-s-soboj-07-11"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Travel-видео: собираем чемоданы и снимаем фильм о поездке. Что взять с собой?&lt;/b&gt;&lt;/br&gt;Самое ценное, что можно привезти из путешествия – это впечатления. А самый удобный способ поделиться впечатлениями и сохранить их – снять всё на видео и сделать фильм о своей поездке. Готовимся к съёмке!&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/79/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Thu, 20 Jul 2017 11:00:14 +0300</pubDate>
+      <link>https://t.me/video_medford_media/79</link>
+      <guid>https://t.me/video_medford_media/79</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/79/532583826425694764_y_4.jpg" type="image/jpeg" length="133880"/>
+    </item>
+    <item>
+      <title>🔥Наш с вами скромный Selfmade Video без денег, без каких-либо усилий с моей стороны отобрали  [...]</title>
+      <description>&lt;br/&gt;🔥Наш с вами скромный Selfmade Video без денег, без каких-либо усилий с моей стороны отобрали в подборку каналов на &lt;a href="ixbt.com" target="_blank" rel="nofollow"&gt;ixbt.com&lt;/a&gt;!&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://www.ixbt.com/live/software/chto-pochitat-v-telegram.html" target="_blank" rel="nofollow"&gt;http://www.ixbt.com/live/software/chto-pochitat-v-telegram.html&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+Хочется верить, что не зря небо коптим!&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="https://www.ixbt.com/live/software/chto-pochitat-v-telegram.html"&gt;&lt;cite&gt;&lt;b&gt;iXBT Live&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Что почитать в Telegram?&lt;/b&gt;&lt;/br&gt;Не так давно, под соусом блокировок Telegram получил мощнейшую рекламную компанию. Если верить федеральным телеканалам в нем полно преступников и&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/78/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Wed, 12 Jul 2017 22:18:01 +0300</pubDate>
+      <link>https://t.me/video_medford_media/78</link>
+      <guid>https://t.me/video_medford_media/78</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/78/532579595883067626_x_4.jpg" type="image/jpeg" length="60322"/>
+    </item>
+    <item>
+      <title>[Media] Как сделать закольцованное видео (для GIF, бэкграунда и пр.)</title>
+      <description>&lt;br/&gt;&lt;strong&gt;Как сделать закольцованное видео (для GIF, бэкграунда и пр.)&lt;/strong&gt;&lt;br /&gt;
+&lt;br /&gt;
+Для этого понадобится любой видеоредактор и эта статья.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://telegra.ph/Kak-sdelat-zakolcovannuyu-GIF-ku-iz-video-07-07" target="_blank" rel="nofollow"&gt;Читать дальше:&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="http://telegra.ph/Kak-sdelat-zakolcovannuyu-GIF-ku-iz-video-07-07"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Как сделать закольцованную GIF-ку из видео&lt;/b&gt;&lt;/br&gt;#вынамписали&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/77/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Mon, 10 Jul 2017 11:00:13 +0300</pubDate>
+      <link>https://t.me/video_medford_media/77</link>
+      <guid>https://t.me/video_medford_media/77</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/77/532578556500786034_x_4.jpg" type="image/jpeg" length="58431"/>
+    </item>
+    <item>
+      <title>[Media] 10 аргументов в защиту видеокамеры, 10 против и один воздержался</title>
+      <description>&lt;br/&gt;&lt;strong&gt;10 аргументов в защиту видеокамеры, 10 против и один воздержался&lt;/strong&gt;&lt;br /&gt;
+&lt;br /&gt;
+Холивар между видеокамерами и фотоаппаратами продолжается. Давайте посмотрим, что говорят сторонники традиционных устройств для съёмки видео...&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://telegra.ph/Snova-sporim-chto-luchshe-dlya-syomki-video-videokamera-ili-fotoapparat-07-04" target="_blank" rel="nofollow"&gt;Читать дальше:&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="http://telegra.ph/Snova-sporim-chto-luchshe-dlya-syomki-video-videokamera-ili-fotoapparat-07-04"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Снова спорим, что лучше для съёмки видео: видеокамера или фотоаппарат?&lt;/b&gt;&lt;/br&gt;Битва видеокамер и фотоаппаратов за своего покупателя не прекращается ни на минуту. Дерзкие фотики напирают, но видавшие виды камеры сдаваться не собираются. И у тех, и у других – свои аргументы pro и contra. И в этот раз давайте выслушаем позицию адепта клана видеокамер. На этот пост меня вдохновила статья блогера Denismajor. Он описывает свой пользовательский опыт по съёмке видео и на фотоаппарат, и на видеокамеру. И я хочу прокомментировать его тезисы. Автор начинает так:&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/76/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Fri, 07 Jul 2017 11:00:05 +0300</pubDate>
+      <link>https://t.me/video_medford_media/76</link>
+      <guid>https://t.me/video_medford_media/76</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/76/532582503575727460_w_4.jpg" type="image/jpeg" length="114413"/>
+    </item>
+    <item>
+      <title>[Media] Новая рубрика #закадром – о трудовых буднях и о том, как оно всё на самом деле...</title>
+      <description>&lt;br/&gt;&lt;strong&gt;Новая рубрика &lt;/strong&gt;&lt;strong&gt;#закадром&lt;/strong&gt;&lt;strong&gt; – о трудовых буднях и о том, как оно всё на самом деле...&lt;/strong&gt;&lt;br /&gt;
+&lt;br /&gt;
+В этой рубрике время от времени буду знакомить вас с тем, какие задачи приходится решать на съёмках, что делается на постпродакшене – короче говоря, трудовые будни, или если по-красивому – бэкстейдж...&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://telegra.ph/O-syomkah-rascenkah-i-raznyh-lyudyah-06-28" target="_blank" rel="nofollow"&gt;Читать дальше:&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="http://telegra.ph/O-syomkah-rascenkah-i-raznyh-lyudyah-06-28"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;О съёмках, разных людях и содержании железа в гречке&lt;/b&gt;&lt;/br&gt;#закадром * «По морям, по волнам, нынче здесь, завтра там» – эти слова идеально описывают последние два дня у меня. Понедельник – съёмка в Воронеже; вторник – съёмка в Переславле-Залесском. Как это часто у нас бывает, не обошлось без приключений... *Под хэштегом #закадром буду постить заметки о проектах, в которых я принимаю участие. В большей степени это будет рассказ о том, как идёт работа, из чего она состоит – обо всём, что называют кухней. В меньшей степени – практические советы; но это, надеюсь, компенсируется…&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/75/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Wed, 05 Jul 2017 11:00:08 +0300</pubDate>
+      <link>https://t.me/video_medford_media/75</link>
+      <guid>https://t.me/video_medford_media/75</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/75/532578053989601218_y_4.jpg" type="image/jpeg" length="356251"/>
+    </item>
+    <item>
+      <title>[Media] Футажи – верные друзья видеографа</title>
+      <description>&lt;br/&gt;&lt;strong&gt;Футажи – верные друзья видеографа&lt;/strong&gt;&lt;br /&gt;
+&lt;br /&gt;
+Что делать, если для монтажа позарез нужны кадры полной луны или фейерверк? Кадры с тигром или патефон? Проще всего использовать уже готовые кадры, но иногда приходится потратить немало времени на их поиски. &lt;br /&gt;
+Вот вам короткий пост со ссылочкой на полезный ресурс с бесплатными 4К футажами...&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://telegra.ph/Nebolshaya-kladovochka-s-futazhami-4K-07-02" target="_blank" rel="nofollow"&gt;Читать далее:&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="http://telegra.ph/Nebolshaya-kladovochka-s-futazhami-4K-07-02"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Небольшая кладовочка с футажами 4К&lt;/b&gt;&lt;/br&gt;#полезныессылки Футажи (от английского footage – видеоматериал), если кто не знает – заранее снятые кадры с предметами, пейзажами, городами, людьми и т.п. К примеру, нужна вам Эйфелева башня в монтаж – не надо лететь в Париж, можно взять уже готовый кадр. Типа стокового фото, только видео. Футажи – полезная вещь, ими можно здорово украсить своё видео при соответствующей фантазии. Скажем, берёте уже готовые кадры патефона, подкладываете «Рио-риту» и дальше пилите ностальгический клип из старых бабушкиных фотографий.&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/72/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Mon, 03 Jul 2017 11:00:06 +0300</pubDate>
+      <link>https://t.me/video_medford_media/72</link>
+      <guid>https://t.me/video_medford_media/72</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/72/532580497825998491_w_4.jpg" type="image/jpeg" length="157346"/>
+    </item>
+  </channel>
+</rss>

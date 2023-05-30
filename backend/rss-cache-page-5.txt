@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Видео производство | Medford.media</title>
+    <link>https://tg.i-c-a.su</link>
+    <description>Авторский блог о технологиях видеопроизводства. Практические советы для начинающих, сравнительные тесты техники, интересные фишки, мини-уроки по съёмке и монтажу.
+Обратная связь, вопросы, пожелания –  всегда пожалуйста: @KonstantinDavydkin</description>
+    <pubDate>Mon, 14 Aug 2017 11:00:13 +0300</pubDate>
+    <lastBuildDate>Mon, 14 Aug 2017 11:00:13 +0300</lastBuildDate>
+    <atom:link rel="self" type="application/rss+xml" href="https://tg.i-c-a.su/rss/video_medford_media"/>
+    <item>
+      <title>[Media] Добрый день, друзья!</title>
+      <description>&lt;br/&gt;&lt;strong&gt;Добрый день, друзья!&lt;/strong&gt;&lt;br /&gt;
+Этот пост поможет вам сориентироваться в тонкостях подготовки видео для загрузки на YouTube. По большому счёту, ничего сложного, но иметь представление об этом надо...&lt;br /&gt;
+Читать дальше: &lt;a href="https://goo.gl/P2nSCR" target="_blank" rel="nofollow"&gt;https://goo.gl/P2nSCR&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="https://goo.gl/P2nSCR"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Как правильно кодировать видео для YouTube?&lt;/b&gt;&lt;/br&gt;С 2005 года, когда появился YouTube, технологии сжатия видео сильно усовершенствовались и YouTube несколько раз менял форматы в которых транслируется видео. Сейчас видео, которое загружается на YouTube, перекодируется, хранится на серверах и показывается зрителю в форматах H.264/AVC, WebM/VP9, WebM/VP8, H.263/Sorenson Spark, H.263/Simple. Нет никакого смысла самостоятельно кодировать видео во все эти форматы и все разрешения, YouTube делает это автоматически. Но тем не менее, кое-какие манипуляции всё же стоит…&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/86/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Mon, 14 Aug 2017 11:00:13 +0300</pubDate>
+      <link>https://t.me/video_medford_media/86</link>
+      <guid>https://t.me/video_medford_media/86</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/86/532581524323228164_x_4.jpg" type="image/jpeg" length="934"/>
+    </item>
+    <item>
+      <title>[Media] Привет, друзья!</title>
+      <description>&lt;br/&gt;Привет, друзья! &lt;br /&gt;
+Наш канал попал в подборку Rozetked – весьма уважаемого ресурса о всяких технологических штуках и явлениях. Спасибо ребятам за это, мой долг – упомянуть о канале &lt;a href="tg://resolve?domain=@rozetked" rel="nofollow"&gt;@rozetked&lt;/a&gt; и выразить им уважение за качественный контент и публикацию о нас.&lt;br /&gt;
+А теперь к нашей теме.&lt;br /&gt;
+Этот пост о том, как управлять вниманием зрителя – и что для этого делать при съёмке и при монтаже...&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="https://goo.gl/Bj2XhG" target="_blank" rel="nofollow"&gt;Читать дальше&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="https://goo.gl/Bj2XhG"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;О неразрывной взаимосвязи съёмки и монтажа&lt;/b&gt;&lt;/br&gt;И монтаж, и съёмка – разные инструменты для решения общей задачи: рассказать зрителю историю. Камера фиксирует фрагменты действительности, действия героев, события их жизни, а на монтаже эти фрагменты выстраиваются в историю. Эта тема очень обширна. Говорить о съёмке и о монтаже можно бесконечно. Я коснусь только некоторых ключевых моментов и попробую передать это словами).&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/85/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Mon, 07 Aug 2017 11:00:15 +0300</pubDate>
+      <link>https://t.me/video_medford_media/85</link>
+      <guid>https://t.me/video_medford_media/85</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/85/532576245808422485_x_4.jpg" type="image/jpeg" length="741"/>
+    </item>
+    <item>
+      <title>[Media] Привет всем!</title>
+      <description>&lt;br/&gt;&lt;strong&gt;Привет всем!&lt;/strong&gt;&lt;br /&gt;
+&lt;br /&gt;
+Короткий постик на тему: &lt;strong&gt;как скачать видео с YouTube.&lt;/strong&gt;&lt;br /&gt;
+Сделать это очень просто: не надо никаких сторонних плагинов для браузера, никаких программ, ничего вообще специального!&lt;br /&gt;
+&lt;br /&gt;
+Прямо в адресной строке, где у вас написано типа: &lt;a href="https://www.youtube.com/watch" target="_blank" rel="nofollow"&gt;https://www.youtube.com/watch&lt;/a&gt;..... и т.д. берёте и – следите за руками – ставите &lt;strong&gt;ss&lt;/strong&gt; перед &lt;strong&gt;youtube&lt;/strong&gt; (вот так www.ssyoutube.......) и жмете enter, кликате ссылку. &lt;br /&gt;
+Вас перебрасывает на специальный сайт savefromnet и там уже он предлагает скачать и сохранить понравившийся видос.&lt;br /&gt;
+&lt;br /&gt;
+Этот сайт, кстати, и специализируется на скачивании видео с самых разных площадок. Но самым изящным образом это работает с YouTube!&lt;br /&gt;
+&lt;br /&gt;
+&lt;strong&gt;Запомните: ss в адресе перед youtube!&lt;/strong&gt;&lt;br /&gt;
+&lt;br /&gt;
+А кто знал уже про это, тот молодец!)))&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="https://www.youtube.com/watch"&gt;&lt;cite&gt;&lt;b&gt;Youtube&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/83/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Wed, 02 Aug 2017 11:00:09 +0300</pubDate>
+      <link>https://t.me/video_medford_media/83</link>
+      <guid>https://t.me/video_medford_media/83</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/83/6007232141596930175_y_4.jpg" type="image/jpeg" length="27846"/>
+    </item>
+    <item>
+      <title>Друзья, всем привет!</title>
+      <description>&lt;br/&gt;Друзья, всем привет!&lt;br /&gt;
+Надеюсь, выходные провели по назначению и с удовольствием?&lt;br /&gt;
+&lt;br /&gt;
+Я вот впервые в жизни потерял телефон – обидно очень)&lt;br /&gt;
+Не жалко контактов, не жалко приложений, не жалко книжек – всё в облаке.&lt;br /&gt;
+И слава Богу все фотки – а телефон прожил у меня год с небольшим – и все фотки и видео за год бэкапились в облако, на Flickr!&lt;br /&gt;
+Ещё раз рекомендую настроить у себя автозагрузку фотографий и видео в облако – Яндекс, Google, Flickr, кому что нравится! И тогда можно смело терять телефоны))))&lt;br /&gt;
+&lt;br /&gt;
+Спасибо, что читаете! Скоро будут новые дельные посты!))</description>
+      <pubDate>Mon, 31 Jul 2017 14:38:19 +0300</pubDate>
+      <link>https://t.me/video_medford_media/82</link>
+      <guid>https://t.me/video_medford_media/82</guid>
+    </item>
+    <item>
+      <title>Приветствую вас уважаемые читатели!</title>
+      <description>&lt;br/&gt;Приветствую вас уважаемые читатели! &lt;br /&gt;
+Что-то в последнее время я увлёкся большими телеграф-статьями. Надо отдать должное и малой форме)&lt;br /&gt;
+Главная цель, которую я ставлю перед собой, ведя этот канал – помочь вам запечатлеть время и своих близких людей. И время, и люди уходят, а память наша ненадёжна, увы.&lt;br /&gt;
+Снимайте своих детей и родителей, запечатлевайте даже самые незначительные моменты жизни – через годы эти бытовые подробности, которые сейчас вам кажутся пустяковыми, приобретут огромную ценность. Храните эту память в виде фотографий и видеороликов.&lt;br /&gt;
+Ностальгия по прошедшему времени неизбежна, она придёт к каждому и это светлая печаль поможет вам в трудную минуту.&lt;br /&gt;
+Снимите и сохраните эту память. Вернитесь к ней через годы, с повзрослевшими детьми, вспомните своих близких.&lt;br /&gt;
+Если мне удастся хоть немного помочь вам в этом, моя цель достигнута. И значит, я занимаюсь своим каналом не зря.&lt;br /&gt;
+&lt;br /&gt;
+Хороших выходных вам, друзья! Проведите их с любимыми и близкими людьми!</description>
+      <pubDate>Fri, 28 Jul 2017 20:34:13 +0300</pubDate>
+      <link>https://t.me/video_medford_media/81</link>
+      <guid>https://t.me/video_medford_media/81</guid>
+    </item>
+    <item>
+      <title>[Media] Как сконвертировать видео, не устанавливая на компьютер дополнительных программ?</title>
+      <description>&lt;br/&gt;&lt;strong&gt;Как сконвертировать видео, не устанавливая на компьютер дополнительных программ?&lt;/strong&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="https://goo.gl/uo6Q5Y" target="_blank" rel="nofollow"&gt;Читать дальше:&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="https://goo.gl/uo6Q5Y"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Разбираем три онлайн-видеоконвертера и обнаруживаем много бонусов&lt;/b&gt;&lt;/br&gt;Как сконвертировать видео, не устанавливая на компьютер дополнительных программ? Конвертация файлов из одного формата в другой для меня была проблемой. Попадётся, бывало, какой-нибудь Corel-файл – что с ним делать? Скачивать CorelDraw, устанавливать, конвертировать/экспортировать и снова удалять программу? Мутота!Стал слать такие файлы другу, у которого Corel – рабочий инструмент, но это ж надо дождаться, пока он откроет почту, сконвертирует и пришлёт обратно! И только сравнительно недавно я открыл…&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/80/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Thu, 27 Jul 2017 11:19:15 +0300</pubDate>
+      <link>https://t.me/video_medford_media/80</link>
+      <guid>https://t.me/video_medford_media/80</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/80/532584084123730187_w_4.jpg" type="image/jpeg" length="122749"/>
+    </item>
+  </channel>
+</rss>

@@ -4,7 +4,9 @@
         'main-video__overlay',
         { 'main-video__overlay_open_mobile': mobileMenu }
     ]">
-      <iframe id="mainVideo" ref="mainVideo" class="main-video" src="https://player.vimeo.com/video/820383465?autoplay=0&loop=1&autopause=0&muted=1&controls=0&playsinline=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <video loop autoplay muted playsinline class="main-video">
+        <source src="/logo-m.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="container">
       <div class="row">
@@ -77,10 +79,9 @@ export default {
         this.observer = new IntersectionObserver(this.onElementObserved);
 
         if (this.observer) {
-          this.observer.observe(this.$refs.mainVideo);
           this.observer.observe(this.$refs.TheShowreel.$refs.showReelVideo);
-          this.observer.observe(this.$refs.TheCreate.$refs.conceptVideo);
-          this.observer.observe(this.$refs.TheCreate.$refs.arVideo);
+          // this.observer.observe(this.$refs.TheCreate.$refs.conceptVideo);
+          // this.observer.observe(this.$refs.TheCreate.$refs.arVideo);
         }
       }, 500);
     });

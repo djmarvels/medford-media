@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Видео производство | Medford.media</title>
+    <link>https://tg.i-c-a.su</link>
+    <description>Авторский блог о технологиях видеопроизводства. Практические советы для начинающих, сравнительные тесты техники, интересные фишки, мини-уроки по съёмке и монтажу.
+Обратная связь, вопросы, пожелания –  всегда пожалуйста: @KonstantinDavydkin</description>
+    <pubDate>Tue, 23 May 2017 12:00:11 +0300</pubDate>
+    <lastBuildDate>Tue, 23 May 2017 12:00:11 +0300</lastBuildDate>
+    <atom:link rel="self" type="application/rss+xml" href="https://tg.i-c-a.su/rss/video_medford_media"/>
+    <item>
+      <title>[Media] Что происходит за кадром: как был сделан ролик для предыдущего поста?</title>
+      <description>&lt;br/&gt;&lt;strong&gt;Что происходит за кадром: как был сделан ролик для предыдущего поста?&lt;/strong&gt;&lt;br /&gt;
+Эмоции от полёта немного улеглись, просмотры видео крутятся и настало время рассказать, как это видео было снято и как смонтировано. Опыт, который будет полезен всем, кто снимает домашнее видео...&lt;br /&gt;
+&lt;a href="http://telegra.ph/Behkstejdzh-kak-ya-sdelal-video-dlya-predydushchego-posta-05-21" target="_blank" rel="nofollow"&gt;Читать дальше...&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="http://telegra.ph/Behkstejdzh-kak-ya-sdelal-video-dlya-predydushchego-posta-05-21"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Бэкстейдж: как я сделал видео для предыдущего поста...&lt;/b&gt;&lt;/br&gt;После первого в своей жизни полёта на Як-18Т сын теперь гордится собой невероятно: сам пилотировал самолёт, сам выполнял фигуры и вообще, теперь он крутой)В качестве доказательства он показывает всем видео своего полёта, не уставая пересматривать этот семиминутный ролик и комментировать бабушкам, дедушкам и прочим зрителям, как он летал и пилотировал.Видео, что называется, зашло! Я ни секунды не пожалел, что не поленился взять камеру (как частенько бывает) и добросовестно снимал вместо того, чтобы в полной…&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/56/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Tue, 23 May 2017 12:00:11 +0300</pubDate>
+      <link>https://t.me/video_medford_media/56</link>
+      <guid>https://t.me/video_medford_media/56</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/56/532583787770907415_w_4.jpg" type="image/jpeg" length="378908"/>
+    </item>
+    <item>
+      <title>[Media] UPD: Незапланированный пост про полёт, вино из одуванчиков и подарки любимым...</title>
+      <description>&lt;br/&gt;UPD: Незапланированный пост про полёт, вино из одуванчиков и подарки любимым...&lt;br /&gt;
+&lt;br /&gt;
+Как решить вечную проблему подарка детям? Как сохранить кусочек счастья на долгие годы?&lt;br /&gt;
+Эти метафизические вопросы я решал всю субботу...   &lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://telegra.ph/Kak-sdelat-podarok-kotoryj-zapomnitsya-na-vsyu-zhizn-05-20" target="_blank" rel="nofollow"&gt;Читать дальше:&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="http://telegra.ph/Kak-sdelat-podarok-kotoryj-zapomnitsya-na-vsyu-zhizn-05-20"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Как сделать подарок, который запомнится на всю жизнь?&lt;/b&gt;&lt;/br&gt;Не планировал этот пост, но не поделиться своей радостью не могу. Вчера старшему исполнилось 11 лет. Долго думал, что ж ему подарить? Он неистовый фанат Lego и Minecraft – вроде бы идея на поверхности – но покупать очередной конструктор, который будет собран один раз и убран на полку, не хотелось.Я решил подарить сыну полёт на самолёте Як-18Т. Сам летал не раз, впервые ещё на третьем курсе МАИ и до сих пор помню эти впечатления.Конечно, решил снять это дело на видео, благо есть на что снимать.&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/48/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Sun, 21 May 2017 11:00:17 +0300</pubDate>
+      <link>https://t.me/video_medford_media/48</link>
+      <guid>https://t.me/video_medford_media/48</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/48/532581554387912257_w_4.jpg" type="image/jpeg" length="347093"/>
+    </item>
+    <item>
+      <title>[Media] Что почём?</title>
+      <description>&lt;br/&gt;Что почём? 720p или 1080p?&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://telegra.ph/720p-ili-1080p-05-19" target="_blank" rel="nofollow"&gt;http://telegra.ph/720p-ili-1080p-05-19&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="http://telegra.ph/720p-ili-1080p-05-19"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;720p или 1080p?&lt;/b&gt;&lt;/br&gt;В заголовке – не цены в рублях!)  720p и 1080р – так обозначаются стандарты видео высокого разрешения. Число – это количество пикселей по высоте (720 или 1080 соответственно). Буква "р" означает прогрессивный формат построения изображения – Progressive. Бывает ещё i – Interlace – чересстрочный формат, когда каждый кадр изображения состоит из двух строк-полукадров. Но interlace – наследие аналоговой эры и кинескопов – сейчас применяется всё реже. Во многих камерах режима 1080i уже и нет. Да, кстати:…&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/46/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Sat, 20 May 2017 00:24:03 +0300</pubDate>
+      <link>https://t.me/video_medford_media/46</link>
+      <guid>https://t.me/video_medford_media/46</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/46/532582164273267346_w_4.jpg" type="image/jpeg" length="314656"/>
+    </item>
+    <item>
+      <title>[Media] Как найти хороший суперклей?</title>
+      <description>&lt;br/&gt;Как найти хороший суперклей?&lt;br /&gt;
+От плёночной эры кинопроизводства нам в наследство досталось много терминов той поры. Например, в профессиональной среде часто говорят «клеить», подразумевая видеомонтаж. Куски плёнки раньше именно что клеили между собой. &lt;br /&gt;
+Сейчас другие технологии монтажа. Этой темы мы и коснёмся сегодня... &lt;br /&gt;
+&lt;a href="http://telegra.ph/Obzor-programm-dlya-montazha-video-05-15" target="_blank" rel="nofollow"&gt;http://telegra.ph/Obzor-programm-dlya-montazha-video-05-15&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="http://telegra.ph/Obzor-programm-dlya-montazha-video-05-15"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Обзор программ для монтажа видео&lt;/b&gt;&lt;/br&gt;Понятное дело, что программ для монтажа существует великое множество. В профессиональном сегменте выбор невелик – Adobe Premiere, Final Cut, Avid. Новый тренд – монтаж в Da Vinci (программа, изначально заточенная для профессиональной цветокоррекции). А вот для любителей есть огромное количество программ монтажа, разной степени удобства и функциональности – начиная от простейших Windows Movie Maker и iMovie (для Мас); заканчивая более сложными и продвинутыми типа Eduis или Pinnacle Studio. Чтобы не раздувать…&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/44/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Wed, 17 May 2017 11:00:11 +0300</pubDate>
+      <link>https://t.me/video_medford_media/44</link>
+      <guid>https://t.me/video_medford_media/44</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/44/532582958842213146_y_4.jpg" type="image/jpeg" length="78293"/>
+    </item>
+    <item>
+      <title>[Media] Немного о съёмке видео на мобильный телефон</title>
+      <description>&lt;br/&gt;Немного о съёмке видео на мобильный телефон&lt;br /&gt;
+&lt;a href="http://telegra.ph/Ideya-na-10000-05-11" target="_blank" rel="nofollow"&gt;http://telegra.ph/Ideya-na-10000-05-11&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="http://telegra.ph/Ideya-na-10000-05-11"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Идея на $10000&lt;/b&gt;&lt;/br&gt;Короткий пост. Победителем конкурса короткометражных фильмов Nokia Shorts 2011 стал фильм «Splitscreen: a love story». Режиссёр James W Griffiths получил награду в 10000 долларов. Фильм целиком снят на камеру мобильного телефона Nokia N8. Идея всегда выше инструмента для её реализации. У меня всё. stay tuned @selfmade_video&lt;/br&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Mon, 15 May 2017 11:00:17 +0300</pubDate>
+      <link>https://t.me/video_medford_media/43</link>
+      <guid>https://t.me/video_medford_media/43</guid>
+    </item>
+    <item>
+      <title>[Media] Как купить дорогую камеру и не пожалеть об этом?</title>
+      <description>&lt;br/&gt;Как купить дорогую камеру и не пожалеть об этом?&lt;br /&gt;
+Можно месяцами читать обзоры и лазить по форумам. Можно наизусть выучить технические характеристики наизусть и побивать познаниями несчастных консультантов в магазине электроники. Но гарантирует ли всё это по-настоящему удачную покупку?&lt;br /&gt;
+&lt;a href="http://telegra.ph/Kak-kupit-doroguyu-kameru-i-ne-pozhalet-ob-ehtom-05-10" target="_blank" rel="nofollow"&gt;http://telegra.ph/Kak-kupit-doroguyu-kameru-i-ne-pozhalet-ob-ehtom-05-10&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="http://telegra.ph/Kak-kupit-doroguyu-kameru-i-ne-pozhalet-ob-ehtom-05-10"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Как купить дорогую камеру и не пожалеть об этом?&lt;/b&gt;&lt;/br&gt;У меня не раз такое было в практике: когда сам используешь камеру, фотоаппарат или объектив на съёмке, то буквально за день работы понимаешь – дельная вещь или нет. Это вам не в магазине камерку привязанную в руках повертеть… Именно так я знакомился с системами электронной стабилизации – подвесом для GoPro и камерой DJI Osmo. Много читал про них, посмотрел кучу роликов и обзоров на Ютюб – вроде и та неплоха, и эта ничего. Реальное понимание, какая из них для меня лучше, пришло только тогда, когда я поснимал…&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/41/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Sat, 13 May 2017 11:00:16 +0300</pubDate>
+      <link>https://t.me/video_medford_media/41</link>
+      <guid>https://t.me/video_medford_media/41</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/41/532580618085032425_w_4.jpg" type="image/jpeg" length="205635"/>
+    </item>
+  </channel>
+</rss>

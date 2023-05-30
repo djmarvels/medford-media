@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Видео производство | Medford.media</title>
+    <link>https://tg.i-c-a.su</link>
+    <description>Авторский блог о технологиях видеопроизводства. Практические советы для начинающих, сравнительные тесты техники, интересные фишки, мини-уроки по съёмке и монтажу.
+Обратная связь, вопросы, пожелания –  всегда пожалуйста: @KonstantinDavydkin</description>
+    <pubDate>Tue, 19 Sep 2017 20:02:17 +0300</pubDate>
+    <lastBuildDate>Tue, 19 Sep 2017 20:02:17 +0300</lastBuildDate>
+    <atom:link rel="self" type="application/rss+xml" href="https://tg.i-c-a.su/rss/video_medford_media"/>
+    <item>
+      <title>[Photo] Какие дополнительные аксессуары могут пригодиться при съемке на смартфон?</title>
+      <description>&lt;a href="https://tg.i-c-a.su/media/video_medford_media/94/5334584574497368139_y_2.jpg" target="_blank" rel="nofollow"&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/94/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Какие дополнительные аксессуары могут пригодиться при съемке на смартфон? Обзор объективов, стабилизаторов и звукового оборудования для iPhone и Android: &lt;a href="https://goo.gl/UjHZbp" target="_blank" rel="nofollow"&gt;https://goo.gl/UjHZbp&lt;/a&gt;</description>
+      <pubDate>Tue, 19 Sep 2017 20:02:17 +0300</pubDate>
+      <link>https://t.me/video_medford_media/94</link>
+      <guid>https://t.me/video_medford_media/94</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/94/5334584574497368139_y_2.jpg" type="image/jpeg" length="46575"/>
+    </item>
+    <item>
+      <title>Я несколько раз рассказывал о полезных приложениях для съемки и монтажа видео на смартфоне.</title>
+      <description>&lt;br/&gt;Я несколько раз рассказывал о полезных приложениях для съемки и монтажа видео на смартфоне. Скачать их и многие другие программы с играми можно на канале &lt;a href="tg://resolve?domain=@EasyAPK" rel="nofollow"&gt;@EasyAPK&lt;/a&gt;. Там публикуют свежие новинки, взломанные версии популярных программ и не забывают про обновления📲&lt;br /&gt;
+#рекомендация</description>
+      <pubDate>Tue, 05 Sep 2017 11:00:06 +0300</pubDate>
+      <link>https://t.me/video_medford_media/93</link>
+      <guid>https://t.me/video_medford_media/93</guid>
+    </item>
+    <item>
+      <title>10 советов от видеографа Кая Вонга о том, как снять качественное видео на смартфон: https://go [...]</title>
+      <description>&lt;a href="https://tg.i-c-a.su/media/video_medford_media/92/5273768404521691139_x_2.jpg" target="_blank" rel="nofollow"&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/92/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;10 советов от видеографа Кая Вонга о том, как снять качественное видео на смартфон: &lt;a href="https://goo.gl/KT2iQH" target="_blank" rel="nofollow"&gt;https://goo.gl/KT2iQH&lt;/a&gt;</description>
+      <pubDate>Fri, 01 Sep 2017 12:12:13 +0300</pubDate>
+      <link>https://t.me/video_medford_media/92</link>
+      <guid>https://t.me/video_medford_media/92</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/92/5273768404521691139_x_2.jpg" type="image/jpeg" length="26860"/>
+    </item>
+    <item>
+      <title>[Media] Несколько реально полезных и бесплатных штучек для работы с медиафайлами.</title>
+      <description>&lt;br/&gt;Несколько реально полезных и бесплатных штучек для работы с медиафайлами. Самому реально понравилось, делюсь с вами!&lt;br /&gt;
+#полезныессылки&lt;br /&gt;
+Читать дальше: &lt;a href="https://goo.gl/wU738w" target="_blank" rel="nofollow"&gt;https://goo.gl/wU738w&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="https://goo.gl/wU738w"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Несколько полезных и бесплатных онлайн инструментов&lt;/b&gt;&lt;/br&gt;Сегодня посоветую вам удобный онлайн инструментарий – целый ящик полезных инструментов для работы с медиафайлами и с видео в частности.  Я вырос в то время, когда большой популярностью пользовались компакт-диски со сборниками программ и утилит. Всевозможные “Реаниматоры”, "Золотые коллекции софта” и прочие – хорошо их помню! Потом помню, как где-то прочитал о том, что программы для установки на компьютер уступят место облачным решениям и обрабатывать фотографии или работать с текстом можно будет он-лайн.…&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/91/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Wed, 30 Aug 2017 11:00:05 +0300</pubDate>
+      <link>https://t.me/video_medford_media/91</link>
+      <guid>https://t.me/video_medford_media/91</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/91/532580983157369352_w_4.jpg" type="image/jpeg" length="205530"/>
+    </item>
+    <item>
+      <title>[Media] Приветствую!</title>
+      <description>&lt;br/&gt;Приветствую!&lt;br /&gt;
+В этом посте мы начнём говорить о монтаже – зачем он нужен и какими минимальными понятиями надо владеть, чтобы делать интереное видео.&lt;br /&gt;
+&lt;br /&gt;
+Читать дальше: &lt;a href="https://goo.gl/5C5UYv" target="_blank" rel="nofollow"&gt;https://goo.gl/5C5UYv&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;blockquote cite="https://goo.gl/5C5UYv"&gt;&lt;cite&gt;&lt;b&gt;Telegraph&lt;/b&gt;&lt;/cite&gt;&lt;/br&gt;&lt;b&gt;Принципы монтажа: знакомимся и проверяем. Часть 1&lt;/b&gt;&lt;/br&gt;Как монтировать снятое видео? Как снимать, чтобы видео можно было хорошо смонтировать? Для этого нужно знать основные принципы монтажа. Вообще, монтаж нужен для того, чтобы рассказать зрителю историю, передать информацию с помощью визуальных образов.&lt;/br&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/90/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/blockquote&gt;</description>
+      <pubDate>Mon, 21 Aug 2017 18:36:33 +0300</pubDate>
+      <link>https://t.me/video_medford_media/90</link>
+      <guid>https://t.me/video_medford_media/90</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/90/532582112733754798_x_4.jpg" type="image/jpeg" length="934"/>
+    </item>
+    <item>
+      <title>[Photo] Вот несколько советов тем, кто в первый раз взял в руки камеру.</title>
+      <description>&lt;a href="https://tg.i-c-a.su/media/video_medford_media/88/5231033771984267261_y_2.jpg" target="_blank" rel="nofollow"&gt;&lt;img src="https://tg.i-c-a.su/media/video_medford_media/88/preview/thumb.jpeg" style="max-width:100%"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Вот несколько советов тем, кто в первый раз взял в руки камеру. Они в первую очередь предназначены фотографам, но будущим операторам и видеографам тоже будет полезно: &lt;a href="https://goo.gl/oVzskD" target="_blank" rel="nofollow"&gt;https://goo.gl/oVzskD&lt;/a&gt;</description>
+      <pubDate>Thu, 17 Aug 2017 18:19:22 +0300</pubDate>
+      <link>https://t.me/video_medford_media/88</link>
+      <guid>https://t.me/video_medford_media/88</guid>
+      <enclosure url="https://tg.i-c-a.su/media/video_medford_media/88/5231033771984267261_y_2.jpg" type="image/jpeg" length="92418"/>
+    </item>
+  </channel>
+</rss>

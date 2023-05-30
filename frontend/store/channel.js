@@ -3,19 +3,55 @@ import ru from 'moment/dist/locale/ru';
 
 moment.locale('ru');
 
+const dateFormat = (date) => {
+    return moment(date).calendar({
+        sameDay: '[Today]',
+        nextDay: '[Tomorrow]',
+        nextWeek: 'dddd',
+        lastDay: '[Yesterday]',
+        lastWeek: '[Last] dddd',
+        sameElse: 'DD MMM YYYY'
+    });
+};
+
+const kitcut = ( text, limit) => {
+    text = text.trim();
+    if( text.length <= limit) return text;
+    text = text.slice( 0, limit); // тупо отрезать по лимиту
+    let lastSpace = text.lastIndexOf(" ");
+    if( lastSpace > 0) { // нашлась граница слов, ещё укорачиваем
+        text = text.substr(0, lastSpace);
+    }
+    return text + '&hellip;';
+};
+
+const getLimitOfPage = (page) => {
+  switch (page) {
+      case 1: return 7;
+      default: return 6;
+  }
+};
+
 export default {
     namespaced: true,
     state() {
         return {
             posts: [],
-            postLoading: false,
+            maxPages: 11,
+            navigationPage: 1,
+            postLoading: true,
         };
     },
     getters: {
         posts: state => state.posts,
         postLoading: state => state.postLoading,
+        maxPages: state => state.maxPages,
+        navigationPage: state => state.navigationPage,
     },
     mutations: {
+        SET_NAV_PAGE(state, page) {
+            state.navigationPage = page;
+        },
         SET_POST_LOADING(state, value) {
           state.postLoading = value;
         },
@@ -27,10 +63,14 @@ export default {
         },
     },
     actions: {
-      async GET_POSTS({ commit }) {
+      async GET_POSTS({ getters, commit }, params = {
+          page: 1
+      }) {
           commit('SET_POST_LOADING', true);
           try {
+              console.log('limit: ', getLimitOfPage(params.page), ' page: ', params.page);
               const xmlStr = await this.$axios.$get('/backend/parser.php', {
+                  params: { ...params, limit: getLimitOfPage(params.page) },
                   withCredentials: true,
               });
               const parser = new DOMParser();
@@ -40,7 +80,6 @@ export default {
                   console.log("error while parsing");
                   commit('SET_POST_LOADING', false);
               } else if (doc && doc.documentElement && typeof doc.documentElement.querySelectorAll === 'function') {
-                  commit('CLEAR_POSTS');
                   const items = Array.from(doc.documentElement.querySelectorAll('item'));
                   items.forEach((item) => {
                       const itemContent = item.querySelector('description');
@@ -70,27 +109,6 @@ export default {
                           }
                       }
                       if ((itemContent && itemContent.textContent) && (itemLink && itemLink.textContent) && (itemDate && itemDate.textContent)) {
-                          const dateFormat = (date) => {
-                              return moment(date).calendar({
-                                  sameDay: '[Today]',
-                                  nextDay: '[Tomorrow]',
-                                  nextWeek: 'dddd',
-                                  lastDay: '[Yesterday]',
-                                  lastWeek: '[Last] dddd',
-                                  sameElse: 'DD MMM YYYY'
-                              });
-                          };
-
-                          const kitcut = ( text, limit) => {
-                              text = text.trim();
-                              if( text.length <= limit) return text;
-                              text = text.slice( 0, limit); // тупо отрезать по лимиту
-                              let lastSpace = text.lastIndexOf(" ");
-                              if( lastSpace > 0) { // нашлась граница слов, ещё укорачиваем
-                                  text = text.substr(0, lastSpace);
-                              }
-                              return text + '&hellip;';
-                          }
                           const content = kitcut(String(itemContent.textContent), 500);
 
                           commit('ADD_POST_ITEM', {
@@ -101,7 +119,6 @@ export default {
                           });
                       }
                   });
-                  commit('SET_POST_LOADING', true);
               }
           } catch (error) {
               console.log(error);

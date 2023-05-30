@@ -7,7 +7,9 @@
         Разработаем концепцию и&nbsp;сценарий, которые помогут потребителям влюбиться в&nbsp;ваш продукт
       </h6>
       <div class="create-item-content create-item-content--concept">
-        <iframe id="conceptVideo" ref="conceptVideo" class="create-item-video create-item-video--concept" src="https://player.vimeo.com/video/820890583?autoplay=0&loop=1&autopause=0&muted=1&controls=0&playsinline=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen />
+        <video loop autoplay muted playsinline class="create-item-video create-item-video--concept">
+          <source src="/heart.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
@@ -61,7 +63,9 @@
 
     <div class="create-item create-item--ar">
       <div class="create-item-content create-item-content--ar">
-        <iframe id="arVideo" ref="arVideo" class="create-item-video create-item-video--ar" src="https://player.vimeo.com/video/821062305?autoplay=0&loop=1&autopause=0&muted=1&controls=0&playsinline=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen />
+        <video loop autoplay muted playsinline class="create-item-video create-item-video--ar">
+          <source src="/ar.mp4" type="video/mp4">
+        </video>
         <p class="create-item-text create-item-text--ar">
           <b>Очки дополненной реальности</b> показывают интеракивные подсказки и&nbsp;позволяют проводить вебинары по&nbsp;ремонту оборудования со&nbsp;съемкой от&nbsp;первого лица
         </p>
@@ -254,8 +258,11 @@ $sizeXl: 1140px;
         position: absolute;
         min-height: 881px;
         top: -406px;
-        left: -24px;
         z-index: -1;
+
+        @media (min-width: 576px) {
+          left: -24px;
+        }
 
         @media (min-width: 992px) {
           min-width: 1566px;
@@ -265,6 +272,7 @@ $sizeXl: 1140px;
         }
         @media (max-width: 575px) {
           overflow: hidden;
+          left: 0;
         }
       }
       &--director {
@@ -577,6 +585,11 @@ $sizeXl: 1140px;
           left: 0;
         }
         @media (max-width: 1199px) {
+          min-height: 360px;
+          height: 360px;
+          max-height: 360px;
+        }
+        @media (max-width: 1199px) {
           max-width: calc(100vw - (36px * 2));
           left: 36px;
         }
@@ -585,10 +598,22 @@ $sizeXl: 1140px;
         }
       }
       &--concept {
+        @media (min-width: 992px) {
+          max-height: 360px;
+        }
+
         @media (max-width: 991px) {
-          @include exact-size(725px, 408px);
-          left: calc(50vw - (725px / 2));
+          //@include exact-size(725px, 408px);
+          //left: calc(50vw - (725px / 2));
+          min-height: 408px;
+          max-height: 408px;
+          height: 408px;
+          left: 0;
+          object-fit: contain;
           top: 90px;
+        }
+        @media (max-width: 575px) {
+          object-fit: cover;
         }
       }
     }
